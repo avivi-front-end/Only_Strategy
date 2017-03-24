@@ -1,0 +1,111 @@
+.header
+  background: url(../images/header-bg.jpg) no-repeat center top #000
+  background-size: 100% auto
+  height: 100vh
+  &__menu
+    position: absolute
+    left: 40px
+    top: 40px
+    &-btn
+      width: 60px
+      height: 59px
+      display: inline-block
+      position: absolute
+      left: 0
+      right: 0
+      cursor: pointer
+      padding: 19px 18px
+      border: rgba(#fff, 0.2) solid 2px
+    &-polos
+      margin-top: 8px
+      margin-bottom: 8px
+      display: block
+      height: 2px
+      position: relative
+      background: #ffffff
+      &:before
+        content: ''
+        height: 2px
+        display: block
+        width: 100%
+        background: #ffffff
+        top: -8px
+        left: 0
+        right: 0
+        position: absolute
+      &:after
+        position: absolute
+        left: 0
+        bottom: -8px
+        right: 0
+        content: ''
+        height: 2px
+        display: block
+        width: 100%
+        background: #ffffff
+        margin-top: 6px
+  &__logotip
+    position: absolute
+    left: 130px
+    top: 40px
+  &__phone
+    position: absolute
+    right: 58px
+    top: 56px
+    color: #ffffff
+    font-family: $ffOpenSansLight
+    display: table
+    vertical-align: middle
+    &-link
+      color: #fff
+      text-transform: uppercase
+      font-family: $ffOpenSansLight
+      font-size:  2.286rem
+      line-height: 2.286rem
+      text-decoration: none
+      display: table-cell
+      vertical-align: middle
+      letter-spacing: -0.5px
+      strong
+        font-family: $ffOpenSansBold
+    &-text
+      font-family: $ffOpenSansSBold
+      font-size: 0.8571rem
+      line-height: 0.8571rem
+      color: #fff
+      opacity: 0.5
+      vertical-align: middle
+      display: table-cell
+      padding-right: 14px
+  &__title
+    font-family: $ffOpenSansBold
+    font-size: 3.286rem
+    line-height: 4rem
+    color: #ffffff
+    margin-left: -4px
+    margin-bottom: 28px
+    span
+      font-family: $ffOpenSansLight
+      color: #52ac62
+    &:after
+      content: ''
+      display: block
+      background: url(../images/h1-bg.png) no-repeat
+      width: 270px
+      height: 3px
+      margin-left: 2px
+      margin-top: 20px
+  &__noshits
+    background: url(../images/no-shits-header.png) no-repeat right center
+    min-height: 50px
+    padding-right: 60px
+    color: #ffffff
+    line-height: 50px
+
+  .container
+    .row
+      width: 940px
+      padding-bottom: 40px
+      height: 100vh
+      display: table-cell
+      vertical-align: bottom

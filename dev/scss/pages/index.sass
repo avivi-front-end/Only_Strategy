@@ -1,0 +1,1156 @@
+.container
+  width: 100%
+  margin-left: auto
+  margin-right: auto
+  max-width: 960px
+  padding-left: 10px
+  padding-right: 10px
+
+::-webkit-input-placeholder
+  color: rgba(#000, 0.7)
+
+::-moz-placeholder
+  color: rgba(#000, 0.7)
+
+::-ms-input-placeholder
+  color: rgba(#000, 0.7)
+
+::-moz-placeholder
+  color: rgba(#000, 0.7)
+
+html
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  font-family: $font-family-base
+
+.nda
+  padding-top: 92px
+  padding-bottom: 60px
+  &__title
+    color: #000000
+    font-size: 38px
+    font-family: $ffOpenSansBold
+    text-transform: uppercase
+    position: relative
+    letter-spacing: -0.7px
+    padding-bottom: 9px
+    text-indent: -2px
+    &:before
+      position: absolute
+      content: ''
+      display: inline-block
+      width: 49px
+      height: 60px
+      background: url(../images/nda-icon.png) no-repeat
+      left: -79px
+      top: -8px
+  &__desc
+    opacity: 0.5
+    padding-bottom: 26px
+
+.form
+  &__row-flex
+    display: flex
+    padding-bottom: 20px
+    &_pad_but
+      padding-bottom: 14px
+  &_pad_bot
+    padding-bottom: 16px
+  &_bor_bot
+    position: relative
+    padding-bottom: 13px
+    margin-bottom: 30px
+    &:after
+      position: absolute
+      content: ''
+      display: block
+      height: 2px
+      background: #dadada
+      bottom: 0
+      left: -21px
+      right: -21px
+  &__item
+    width: 220px
+    display: inline-flex
+    margin-right: 20px
+    &:nth-last-child(1)
+      margin-right: 0
+    &-right
+      position: relative
+      width: 50%
+      img
+        margin-top: -63px
+        float: right
+        bottom: 0
+        right: 0
+  &__text
+    background: #ffffff
+    border: #c4c4c4 solid 1px
+    border-radius: 3px
+    padding: 0 18px
+    height: 50px
+    width: 100%
+    font-size: 1.143rem
+    font-family: $font-family-base
+  &__item_block_small
+    width: 200px
+  &__item_block_big
+    width: 300px
+  &__item_block_240
+    width: 240px
+  &__item_block_110
+    width: 110px
+    position: relative
+  &__item_block_3x4
+    width: 700px
+    margin-right: 0
+  &__file
+    opacity: 0
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    display: block
+  &__item_block_file
+    position: relative
+    padding-left: 20px
+    label
+      cursor: pointer
+      line-height: 50px
+      color: rgba(#000, 0.7)
+      text-decoration: underline
+  &__submit
+    border-radius: 3px
+    background: url(../images/submit-elips.png) no-repeat 90% center
+    background-color:  $colorGreen
+    border: none
+    border-bottom: #469353 solid 3px
+    color: #ffffff
+    height: 50px
+    width: 100%
+    text-align: left
+    padding-left: 20px
+    font-size: 1.286rem
+    letter-spacing: 0.8px
+    box-shadow: 0 5px 20px -5px rgba(#000, 0.5)
+    &_mod_f14
+      font-size: 1rem
+      background-position: 92% center
+      letter-spacing: 0.3px
+      padding-left: 18px
+    &_mod_type2
+      letter-spacing: 1.5px
+      font-family:  $ffOpenSans
+      font-size: 1.125rem
+      display: block
+      width: 100%
+    &_mod_type3
+      letter-spacing: 1.5px
+      font-family:  $ffOpenSans
+      font-size: 1.125rem
+      background: url(../images/submit-close.png) no-repeat 79% center
+      background-color: #acacac
+      border-color: #939393
+  &__item_check_box
+    position: relative
+    flex-wrap: wrap
+    span
+      font-size: 0.8571rem
+      color: $colorBlack06
+      padding-left: 21px
+      padding-top: 13px
+      display: inline-block
+      &.active
+        color: #000000
+    input
+      opacity: 0
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      display: block
+    label
+      cursor: pointer
+      color: $colorBlack05
+      background: #eeeeee
+      width: 100%
+      padding: 0 18px
+      height: 50px
+      border: #b8b8b8 solid 1px
+      border-radius: 3px
+      display: inline-block
+      line-height: 46px
+    input:checked ~ label
+      background: #ffffff
+      color: #000000
+      height: 50px
+      border: $colorGreen solid 2px
+    input:checked ~ label ~ span
+      color: #000000
+  &__item_two_rows
+    line-height: 14px
+    label
+      padding-top: 10px
+      line-height: 14px
+  &__titleh3
+    padding-top: 17px
+    font-size: 1.6rem
+    color: $colorGreen
+    font-family: $ffOpenSansSBold
+    text-transform: uppercase
+    letter-spacing: 1.6px
+    line-height: 1.825rem
+    margin-left: -2px
+  &__net
+    position: absolute
+    left: 0
+    top: -13px
+    width: auto
+    height: auto
+    max-width: none
+  &__text18
+    font-size: 1.286rem
+    letter-spacing: -0.2px
+    font-family: $ffOpenSansLight
+    &_pad_b1
+      padding-top: 23px
+      padding-bottom: 14px
+    &_pad_b2
+      padding-top: 21px
+      padding-bottom: 16px
+.formchose
+  padding-top: 66px
+  padding-bottom: 60px
+  background: #f3f3f3
+  &__title
+    text-indent: -2px
+    color: $colorGreen
+    font-size: 2.714rem
+    font-family: $ffOpenSansBold
+    vertical-align: text-bottom
+    letter-spacing: 0
+    position: relative
+    letter-spacing: -0.8px
+    padding-bottom: 19px
+    span
+      font-family: $ffOpenSans
+      font-size: 1rem
+      color: $colorBlack05
+    &_icon_plan
+      position: relative
+      &:before
+        content: ''
+        display: inline-block
+        width: 50px
+        height: 74px
+        position: absolute
+        left: -82px
+        top: -8px
+        background: url(../images/icon_plansh.png) no-repeat
+  &__title2
+    &.nefackt__title
+      font-size: 2.714rem
+      line-height: 3.429rem
+      margin-top: 5px
+      letter-spacing: -0.9px
+      padding-bottom: 57px
+      span
+        letter-spacing: -0.9px
+    &_icon_plan
+      position: relative
+      &:before
+        content: ''
+        display: inline-block
+        width: 50px
+        height: 74px
+        position: absolute
+        left: -79px
+        top: -14px
+        background: url(../images/icon_plansh.png) no-repeat
+
+.question
+  padding-top: 91px
+  padding-bottom: 80px
+  border-bottom: #7c7c7c solid 1px
+  &__title
+    text-indent: -2px
+    color: #000
+    font-size: 3.286rem
+    line-height: 3.286rem
+    font-family: $ffOpenSansBold
+    vertical-align: text-bottom
+    letter-spacing: 0
+    position: relative
+    padding-bottom: 10px
+    text-transform: uppercase
+    &:before
+      content: ''
+      display: inline-block
+      width: 50px
+      height: 74px
+      position: absolute
+      left: -82px
+      top: -10px
+      background: url(../images/mask-icon.png) no-repeat
+  &__desc
+    font-size: 3.286rem
+    line-height: 3.286rem
+    font-family: $ffOpenSansLight
+    color: #000000
+    text-indent: -4px
+    padding-bottom: 50px
+    span
+      color: #c92a2a
+  &__row-flex
+    display: flex
+    align-items: center
+    &_mod_second
+      padding-top: 76px
+      .question__item-img-shadow
+        margin-top: 23px
+    &_mod_third
+      padding-top: 108px
+    &_mod_fourth
+      padding-top: 98px
+  &__item
+    &-img-shadow
+      display: inline-block
+      border-width: 1px
+      border-color: rgb(208, 208, 208)
+      border-style: solid
+      background-color: rgb(255, 255, 255)
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15)
+    &-name
+      font-family: $ffOpenSansLight
+      font-size: 3.571rem
+      line-height: 3.571rem
+      display: block
+      padding-bottom: 9px
+    &-red
+      font-family: $ffOpenSansBold
+      font-size: 1.286rem
+      line-height: 1.586rem
+      color: #c92a2a
+      padding-left: 2px
+      display: block
+    &-opis
+      padding-left: 77px
+      //padding-top: 74px
+      padding-right: 98px
+      &_ots_second
+        width: 330px
+        padding-right: 0
+        padding-left: 77px
+      &_ots_first
+        margin-top: -29px
+      &_ots_third
+        width: 519px
+        padding-right: 0
+        margin-top: -39px
+        padding-left: 77px
+      &_ots_fourth
+        padding-left: 54px
+        width: auto
+        margin-top: -5px
+        padding-right: 0
+  &__img_shadow
+    border-width: 1px
+    border-color: rgb(208, 208, 208)
+    border-style: solid
+    background-color: rgb(255, 255, 255)
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15)
+  &__proc
+    font-family: $ffOpenSansXBold
+    font-size: 6.429rem
+    line-height: 6.629rem
+    display: block
+    span
+      color: #c92a2a
+
+.itog-block
+  background: url(../images/itog-bg.jpg) no-repeat center bottom #000
+  -webkit-background-size: cover
+  background-size: cover
+  padding-top: 67px
+  padding-bottom: 55px
+  &__title
+    font-size: 3.286rem
+    color: #ffffff
+    vertical-align: text-bottom
+    font-family: $ffOpenSansLight
+    padding-bottom: 42px
+    &:after
+      display: inline-block
+      content: ''
+      width: 50px
+      height: 50px
+      padding-left: 16px
+      position: relative
+      bottom: -5px
+      background: url(../images/smile-pic.png) no-repeat right center
+  &__title2
+    padding-top: 64px
+  &__imgblock
+    &-img1
+      float: left
+      position: relative
+      //transform: translate(-40px, 0)
+      margin-left: -40px
+    &-img2
+      float: right
+      position: relative
+      margin-right: -40px
+      margin-top: -219px
+      //transform: translate(40px, -219px)
+    &-img3
+      position: relative
+      margin-left: 25px
+      margin-top: -92px
+
+.richag
+  margin-top: 104px
+  font-size: 1.286rem
+  color: #ffffff
+  &__icon
+    width: 223px
+    height: 80px
+    background: url(../images/richag.png) no-repeat
+    margin-bottom: 25px
+
+.nefackt
+  padding-top: 89px
+  padding-bottom: 74px
+  background: url("../images/nefackt-bg.png") repeat-x center bottom
+  &__title
+    margin-left: -3px
+    font-size: 3.286rem
+    line-height: 4rem
+    color: #000
+    letter-spacing: -1.4px
+    font-family: $ffOpenSansBold
+    padding-bottom: 30px
+    font-weight: normal
+    span
+      font-family: $ffOpenSansLight
+      display: block
+      letter-spacing: -1.2px
+      &.green
+        color: $colorGreen
+
+.stepblock
+  display: flex
+  padding-bottom: 79px
+  &__item
+    width: 25%
+    &:nth-child(2)
+      padding-left: 1px
+    &:nth-child(3)
+      padding-left: 6px
+    &:nth-child(4)
+      padding-left: 11px
+  &__number
+    font-family: $ffOpenSansXBold
+    font-size: 6.429rem
+    line-height: 6.429rem
+    color: $colorGreen
+    padding-bottom: 20px
+  &__text
+    margin-left: -2px
+    font-family: $ffOpenSansLight
+    font-size: 1.286rem
+    line-height: 1.858rem
+    color: #000000
+  &__ul
+    font-size: 1rem
+    line-height: 1rem
+    color: $colorBlack05
+    padding-top: 10px
+    margin-left: -3px
+    li
+      list-style: none
+      position: relative
+      padding-bottom: 7px
+      &:before
+        content: '-'
+        position: absolute
+        left: -10px
+
+.odnako-block
+  padding-top: 38px
+  display: flex
+  &__item
+    width: 50%
+    font-size: 1rem
+    line-height: 1.500rem
+    color: $colorBlack07
+    padding-bottom: 16px
+    &:nth-child(2n)
+      padding-left: 9px
+    &-name
+      font-size: 1.286rem
+      line-height: 1.857rem
+      font-family: $ffOpenSansBold
+      color: $colorGreen
+      margin-left: -3px
+      letter-spacing: -0.4px
+      margin-bottom: 8px
+      img
+        vertical-align: middle
+    &_mod_1
+      img
+        position: relative
+        left: 4px
+        top: -8px
+    &_mod_2
+      img
+        position: relative
+        left: 15px
+        top: 0px
+    &_mod_3
+      img
+        position: relative
+        left: 12px
+        top: -1px
+    &_mod_4
+      img
+        position: relative
+        left: 15px
+        top: -3px
+    &_mod_5
+      img
+        position: relative
+        left: 15px
+        top: -3px
+    &_mod_6
+      img
+        position: relative
+        left: 15px
+        top: -3px
+    &_mod_7
+      img
+        position: relative
+        left: 13px
+        top: -3px
+    &_mod_8
+      img
+        position: relative
+        left: 15px
+        top: -3px
+    &_mod_9
+      img
+        position: relative
+        left: 13px
+        top: -5px
+    &_mod_10
+      img
+        position: relative
+        left: 15px
+        top: -7px
+  &__number-pic
+    font-family: $ffOpenSansLight
+    font-size: 6.429rem
+    line-height: 4rem
+    vertical-align: bottom
+    height: 94px
+
+.undestend
+  padding-top: 89px
+  padding-bottom: 107px
+  background: url("../images/undestend-bg.jpg") no-repeat center bottom #343434
+  -webkit-background-size: cover
+  background-size: cover
+  .form
+    padding-top: 25px
+  &__title
+    letter-spacing: -1.1px
+    padding-bottom: 43px
+    &:after
+      display: none
+  &__title_sec
+    color: #ffffff
+    font-size: 6.429rem
+    line-height: 4rem
+    text-indent: -10px
+    padding-bottom: 40px
+    font-family: $ffOpenSansLight
+  &__desc
+    font-size: 1rem
+    text-indent: -2px
+    color: $colorWhite07
+    line-height: 1.514rem
+  &__desc-form
+    color: $colorWhite03
+    font-size: 0.8571rem
+    line-height: 1.086rem
+    padding-top: 5px
+
+.rasstavim
+  padding-top: 89px
+  padding-bottom: 83px
+  &__title
+    padding-bottom: 48px
+  &__rows
+    display: flex
+  &__item
+    width: 50%
+    &:nth-child(2n)
+      padding-left: 10px
+    &-name
+      font-family: $ffOpenSansSBold
+      color: $colorGreen
+      font-size: 1.286rem
+      padding-bottom: 25px
+      &:before
+        content: ''
+        width: 80px
+        height: 80px
+        display: inline-block
+        margin-left: -19px
+        margin-right: 8px
+        margin-bottom: -4px
+      &_icon_bad
+        &:before
+          background: url(../images/bad.png) no-repeat
+      &_icon_good
+        &:before
+          margin-right: 18px
+          background: url(../images/good.png) no-repeat
+  &__list
+    color: $colorBlack07
+    font-size: 1rem
+    line-height: 1.514rem
+    li
+      position: relative
+      padding-left: 21px
+      padding-bottom: 12px
+      list-style: none
+      &:before
+        content: ''
+        position: absolute
+        left: 1px
+        top: 4px
+        display: inline-block
+        width: 10px
+        height: 10px
+        margin-right: 11px
+        background: url(../images/li-crcle.png) no-repeat
+
+.agencij
+  background: url("../images/agencij-bg.png") repeat-x center bottom #f3f3f3
+  padding-top: 69px
+  padding-bottom: 74px
+  &__title
+    position: relative
+    padding-bottom: 24px
+    &:before
+      position: absolute
+      display: inline-block
+    &_icon_megafon
+      &:before
+        content: ''
+        left: -86px
+        top: 5px
+        @include sprite($megafon)
+    &_icon_top
+      &:before
+        content: ''
+        left: -86px
+        top: 5px
+        @include sprite($icon_top)
+
+.row_agencj
+  display: flex
+  flex-wrap: wrap
+  padding-bottom: 15px
+  &__item
+    width: 50%
+    min-height: 185px
+    line-height: 1.450rem
+    &:nth-child(2n)
+      padding-left: 10px
+    &-name
+      font-size: 1.286rem
+      line-height: 1.657rem
+      color: $colorGreen
+      padding-bottom: 10px
+      font-family: $ffOpenSansSBold
+
+.top-otmazok
+  display: flex
+  flex-wrap: wrap
+  padding-top: 43px
+  &__item
+    width: 25%
+    font-size: 1rem
+    line-height: 1.371rem
+    height: 115px
+    padding-left: 20px
+    color: #000000
+    position: relative
+    font-family: $ffOpenSans
+    &:before
+      content: ''
+      position: absolute
+      display: inline-block
+      @include sprite($icon-top-otmazok)
+      left: 5px
+      top: -27px
+    &:nth-child(1), &:nth-child(4n+1)
+      padding-left: 0
+      &:before
+        left: -21px
+        top: -27px
+    &:nth-child(2n)
+      padding-left: 25px
+      transform: translateY(50px)
+    &:nth-child(4n)
+      padding-left: 15px
+      &:before
+        left: -5px
+        top: -27px
+    &:nth-child(4n-1)
+      &:before
+        left: -4px
+        top: -27px
+    span
+      &:after, &:before
+        font-family: $ffOpenSansXBold
+        font-size: 1rem
+        color: $colorGreen
+      &:before
+        content: '„ '
+        height: 100px
+        float: left
+        display: inline-block
+        padding-right: 3px
+      &:after
+        content: ' “'
+
+.vam
+  padding-top: 105px
+  padding-bottom: 111px
+  background: url(../images/vam-bg.jpg) no-repeat center bottom #131313
+  -webkit-background-size: cover
+  background-size: cover
+  color: #fff
+  &__title
+    color: #ffffff
+    padding-bottom: 27px
+    span
+      display: inline
+  &__list
+    font-size: 1.143rem
+    line-height: 1.714rem
+    ol
+      list-style: none
+      counter-reset: point
+      li
+        padding-bottom: 17px
+        &:before
+          content: counter(point) '.'
+          counter-increment: point 1
+          color: $colorGreen
+          padding-right: 4px
+
+.processi
+  padding-top: 87px
+  padding-bottom: 90px
+  &_mod_padb
+    padding-bottom: 57px
+  &__mozgi
+    position: relative
+    margin-top: -89px
+    margin-left: -4px
+  .vam__list
+    padding-top: 27px
+    font-size: 1.125rem
+    padding-bottom: 36px
+    li
+      font-size: 1.125rem
+      color: #000000
+      font-family: $ffOpenSansSBold
+      letter-spacing: 0.4px
+      line-height: 1.725rem
+      padding-bottom: 20px
+      padding-left: 21px
+      position: relative
+      &:before
+        position: absolute
+        left: 1px
+        top: 0
+  &__title
+    text-transform: uppercase
+    position: relative
+    padding-bottom: 74px
+    &:before
+      position: absolute
+      display: inline-block
+    &_icon_proces
+      &:before
+        content: ''
+        left: -84px
+        top: -6px
+        @include sprite($proces)
+    &_icon_real
+      padding-bottom: 38px
+      &:before
+        content: ''
+        left: -86px
+        top: -1px
+        @include sprite($real)
+    &_icon_missij
+      padding-bottom: 38px
+      &:before
+        content: ''
+        left: -95px
+        top: -6px
+        @include sprite($icon-misij)
+    &_title_padb
+      padding-bottom: 52px
+  &__list
+    ol
+      display: flex
+      list-style: none
+      counter-reset: point
+      li
+        display: block
+        position: relative
+        list-style: none
+        &:nth-child(1)
+          padding-right: 64px
+        &:nth-child(2)
+          padding-right: 36px
+        &:nth-child(3)
+          padding-right: 0
+        &:before
+          content: counter(point) '.'
+          counter-increment: point 1
+          color: #000
+          display: inline-block
+          font-size: 1.714rem
+          font-family: $ffOpenSansLight
+          padding-right: 2px
+          text-indent: -2px
+        &:after
+          content: ''
+          position: absolute
+          @include sprite($duga-icon)
+          right: 9px
+          top: -23px
+        &:nth-child(3)
+          &:after
+            display: none
+
+    &-name
+      color: $colorGreen
+      font-size:  1.714rem
+      font-family: $ffOpenSansSBold
+      display: inline-block
+      padding-bottom: 7px
+    &-text
+      font-size: 1rem
+      line-height: 1.500rem
+
+.real-slider
+  display: flex
+  padding-bottom: 87px
+  &__left
+    width: 50%
+  &__right
+    width: 50%
+    color: #e7e7e7
+
+    text-align: center
+    position: relative
+  &__item
+    &-name
+      font-family: $ffOpenSansLight
+      font-size: 3.286rem
+      line-height: 4rem
+      text-indent: -5px
+      padding-bottom: 26px
+    &-list
+      color: $colorBlack07
+      font-size: 1rem
+      li
+        list-style: none
+        position: relative
+        margin-left: 13px
+        padding-bottom: 5px
+
+        letter-spacing: -0.2px
+        &:before
+          content: ''
+          display: inline-block
+          width: 2px
+          height: 2px
+          position: absolute
+          left: -12px
+          top: 9px
+          background: $colorGreen
+  &__prev
+    position: absolute
+    left: 10px
+    top: 95px
+    display: inline-block
+    cursor: pointer
+    @include sprite($prev)
+  &__next
+    position: absolute
+    right: 10px
+    top: 95px
+    display: inline-block
+    cursor: pointer
+    @include sprite($next)
+  &__curent-slider
+    font-size: 12.79rem
+    font-family: $ffOpenSansLight
+    line-height: 15.214rem
+    &-black
+      color: #000000
+      
+.we
+  display: flex
+  align-items: center
+  padding-bottom: 8px
+  &__big
+    width: 50%
+    color: $colorGreen
+    font-size: 17.14rem
+    font-family: $ffOpenSansBold
+    letter-spacing: -3.6px
+    text-indent: -22px
+    margin-top: -77px
+  &__list
+    width: 50%
+    font-size: 1rem
+    line-height: 1.571rem
+    color: $colorBlack07
+    ol
+      display: flex
+      flex-wrap: wrap
+      list-style: none
+      align-items: center
+      counter-reset: point
+      li
+        width: 50%
+        display: block
+        padding-bottom: 33px
+        font-size: 1rem
+        line-height: 1.500rem
+        padding-left: 50px
+        position: relative
+        &:before
+          content: counter(point)
+          counter-increment: point 1
+          font-size: 2.875rem
+          font-family: $ffOpenSansLight
+          color: $colorGreen
+          min-height: 100%
+          display: block
+          position: absolute
+          left: 1px
+          top: -4px
+          padding-left: 6px
+          line-height: 3.5rem
+        &:nth-child(2n)
+          padding-left: 55px
+          &:before
+            left: 7px
+        &:nth-child(5)
+          margin-top: -2px
+        &:nth-child(6)
+          margin-top: -2px
+        &:nth-last-child(1)
+          width: 100%
+          margin-top: -4px
+
+
+.etblock
+  display: flex
+  padding-bottom: 48px
+  &__colum
+    width: 50%
+    &:nth-child(2)
+      padding-left: 13px
+  &__title
+    color: $colorGreen
+    font-family: $ffOpenSansSBold
+    font-size: 1.125rem
+    letter-spacing: 1.2px
+    padding-bottom: 13px
+    text-transform: uppercase
+    &:before
+      content: ''
+      display: block
+    &_icon_cubok
+      &:before
+        content: ''
+        margin-bottom: 20px
+        @include sprite($icon-cubok)
+    &_icon_podhod
+      &:before
+        content: ''
+        margin-top: 23px
+        margin-bottom: 19px
+        @include sprite($icon-podhod)
+    &_icon_lampa
+      &:before
+        content: ''
+        margin-top: 20px
+        margin-bottom: 19px
+        @include sprite($icon-lampa)
+    &_icon_lopata
+      &:before
+        content: ''
+        margin-top: 23px
+        margin-bottom: 19px
+        @include sprite($icon-lopata)
+  &__desc
+    font-size: 1rem
+    color: $colorBlack07
+    line-height: 1.500rem
+    padding-bottom: 34px
+    &_icon_d1
+      padding-left: 80px
+      position: relative
+      padding-bottom: 28px
+      &:before
+        position: absolute
+        left: 13px
+        top: 0
+        content: ''
+        @include sprite($icon-desc-1)
+    &_icon_d2
+      padding-left: 80px
+      position: relative
+      &:before
+        position: absolute
+        left: 11px
+        top: 0
+        content: ''
+        @include sprite($icon-desc-2)
+    &_icon_d3
+      padding-left: 80px
+      position: relative
+      padding-bottom: 28px
+      &:before
+        position: absolute
+        left: 3px
+        top: 14px
+        content: ''
+        @include sprite($icon-desc-3)
+    &_icon_d4
+      padding-left: 80px
+      position: relative
+      &:before
+        position: absolute
+        left: 9px
+        top: 12px
+        content: ''
+        @include sprite($icon-desc-4)
+    &_icon_rvr
+      margin-top: 0
+      &:before
+        margin-top: -10px
+        margin-left: 1px
+        margin-bottom: 15px
+        display: block
+        content: ''
+        @include sprite($rvr-logo)
+    &_icon_avivi
+      padding-left: 25px
+      &:before
+        margin-top: -10px
+        margin-left: 1px
+        margin-bottom: 15px
+        display: block
+        content: ''
+        @include sprite($avivi-logo)
+    &_img_b1
+      padding-bottom: 15px
+      img:nth-child(1)
+        margin-right: 10px
+    &_img_b2
+      padding-bottom: 5px
+      img:nth-child(1)
+        margin-right: 17px
+      img:nth-child(2)
+        margin-right: 12px
+      img:nth-child(3)
+        margin-top: -2px
+    &_img_b3
+      padding-bottom: 15px
+      img:nth-child(1)
+        margin-right: 15px
+      img:nth-child(2)
+        margin-top: 5px
+    &_img_b4
+      padding-bottom: 14px
+      img:nth-child(1)
+        margin-right: 0px
+        margin-left: -12px
+      img:nth-child(2)
+        margin-top: -4px
+    &_img_b5
+      padding-bottom: 13px
+      img:nth-child(1)
+        margin-right: 19px
+        margin-left: 3px
+        margin-top: 0
+      img:nth-child(2)
+        margin-top: 0
+        margin-right: 25px
+      img:nth-child(3)
+        margin-top: -6px
+        margin-right: 14px
+      img:nth-child(4)
+        margin-top: 4px
+        margin-right: 0px
+      img:nth-child(5)
+        margin-top: 11px
+        margin-left: 2px
+        margin-right: 13px
+      img:nth-child(6)
+        margin-top: 11px
+        margin-right: 12px
+      img:nth-child(7)
+        margin-top: 22px
+        margin-right: 6px
+      img:nth-child(8)
+        margin-top: 30px
+        margin-right: 11px
+      img:nth-child(9)
+        margin-top: 28px
+        margin-right: 0px
+
+
+.price
+  font-family: $ffOpenSansLight
+  font-size: 3.286rem
+  letter-spacing: -1px
+  vertical-align: text-bottom
+  &__summa
+    display: inline-block
+    padding-right: 20px
+    color: $colorGreen
+    font-size: 6.429rem
+    letter-spacing: -1.6px
+
+
+.faq
+  padding-top: 86px
+  padding-bottom: 89px
+  &__title
+    padding-bottom: 48px
+  &__qa
+    color: $colorGreen
+    font-family: $ffOpenSansSBold
+    font-size: 1.286rem
+    padding-bottom: 13px
+  &__info
+    letter-spacing: -0.1px
+    padding-bottom: 15px
