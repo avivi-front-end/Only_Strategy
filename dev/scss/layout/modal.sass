@@ -1,0 +1,76 @@
+.overlay
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  display: block
+  background: rgba(#000, 0.5)
+
+.modall
+  visibility: hidden
+  opacity: 0
+  width: 80%
+  padding: 80px 75px
+  max-width: 700px
+  position: fixed
+  display: block
+  min-height: 400px
+  z-index: 1000
+  background: #ffffff
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  transition: opacity 0.5s
+  @media (max-width: 768px)
+    padding: 80px 20px 0
+    opacity: 0
+    width: 100%
+    top: 0
+    transform: translate(-50%, 0)
+    min-height: 420px
+  &.show
+    visibility: visible
+    opacity: 1
+    transition: opacity 0.5s
+  &__close
+    position: absolute
+    width: 60px
+    right: 40px
+    top: 40px
+    height: 60px
+    display: block
+    border: #cccccc solid 2px
+    cursor: pointer
+    &:after
+      content: ''
+      display: inline-block
+      +block_center
+      @include sprite($close-menu)
+    @media (max-width: 768px)
+      right: 20px
+      top: 20px
+      width: 40px
+      height: 40px
+  &__inner
+    padding-top: 89px
+    font-size: 1.286rem
+    font-family: $ffOpenSansLight
+    line-height: 1.571rem
+    @media (max-width: 768px)
+      margin-left: -1px
+      border-top: #e5e5e5 solid 2px
+      padding-top: 57px
+  &__title
+    font-family: $ffOpenSansLight
+    font-size: 3.286rem
+    color: $colorGreen
+    padding-bottom: 43px
+    @media (max-width: 768px)
+      font-size: 24px
+      padding-bottom: 15px
+  &__text
+    padding-left: 4px
+    @media (max-width: 768px)
+      font-size: 16px
+      line-height: 23px

@@ -4,51 +4,53 @@
             <h2 elem="title">ЗАПРОСИТЬ NDA</h2>
             <div elem="desc">*Договор о неразглашении ваших данных</div>
             <div block="form">
-                <div elem="row-flex">
-                    <div elem="item">
-                        <input type="text" name="ipn1" elem="text" placeholder="Реквизиты">
+                <form>
+                    <div elem="row-flex">
+                        <div elem="item">
+                            <input type="text" name="ipn1" elem="text" placeholder="Реквизиты">
+                        </div>
+                        <div elem="item">
+                            <input type="text" name="ipn2" elem="text" placeholder="E-mail">
+                        </div>
+                        <div elem="item" mod="block:small">
+                            <input type="text" name="ipn3" elem="text" placeholder="Телефон">
+                        </div>
+                        <div elem="item" mod="block:file">
+                            <label for="file">Прикрепить документ</label><input type="file" name="" id="file" elem="file">
+                        </div>
                     </div>
-                    <div elem="item">
-                        <input type="text" name="ipn2" elem="text" placeholder="E-mail">
+                    <div elem="row-flex">
+                        <div elem="item">
+                            <input type="submit" elem="submit" value="Запросить">
+                        </div>
                     </div>
-                    <div elem="item" mod="block:small">
-                        <input type="text" name="ipn3" elem="text" placeholder="Телефон">
-                    </div>
-                    <div elem="item" mod="block:file">
-                        <label for="file">Прикрепить документ</label><input type="file" name="" id="file" elem="file">
-                    </div>
-                </div>
-                <div elem="row-flex">
-                    <div elem="item">
-                        <input type="submit" elem="submit" value="Запросить">
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
 </section>
-<div block="formchose">
+<div block="formchose" class="hide-mobile">
     <div class="container">
         <div class="row">
             <div elem="title" mod="icon:plan">Я <span>(необходимо выбрать один вариант)</span></div>
             <div block="form" mod="pad:bot">
                 <div elem="row-flex">
                     <div elem="item" mod="check:box">
-                        <input type="checkbox" checked name="" id="cb1"><label for="cb1">Владелец бизнеса</label>
+                        <input type="radio" checked name="vlad" id="cb1"><label for="cb1">Владелец бизнеса</label>
                     </div>
                     <div elem="item" mod="check:box">
-                        <input type="checkbox"  name="" id="cb2"><label for="cb2">Управляющий</label>
+                        <input type="radio"  name="vlad" id="cb2"><label for="cb2">Управляющий</label>
                     </div>
                     <div elem="item" mod="check:box">
-                        <input type="checkbox"  name="" id="cb3"><label for="cb3">IT-специалист</label>
+                        <input type="radio"  name="vlad" id="cb3"><label for="cb3">IT-специалист</label>
                     </div>
                     <div elem="item" mod="check:box">
-                        <input type="checkbox"  name="" id="cb4"><label for="cb4">Управляющий</label>
+                        <input type="radio"  name="vlad" id="cb4"><label for="cb4">Управляющий</label>
                     </div>
                 </div>
                 <div elem="row-flex">
                     <div elem="item" mod="check:box">
-                        <input type="checkbox" checked name="" id="cb5"><label for="cb5">Маркетолог</label>
+                        <input type="radio" name="vlad" id="cb5"><label for="cb5">Маркетолог</label>
                     </div>
                     <div elem="item" mod="block:3x4">
                         <input type="text" name="ipn3" elem="text" placeholder="Другая должность">
@@ -107,7 +109,7 @@
         </div>
     </div>
 </div>
-<section block="question">
+<section block="question" class="hide-mobile">
     <div class="container">
         <div class="row">
             <div elem="title">СУТЬ ВОПРОСА</div>
@@ -161,7 +163,7 @@
         </div>
     </div>
 </section>
-<section block="itog-block">
+<section block="itog-block" class="hide-mobile">
     <div class="container">
         <div class="row">
             <h2 elem="title">А в итоге...</h2>
@@ -175,13 +177,14 @@
                 <span>их кто-то должен контролировать</span>
             </h3>
             <div block="richag">
-                <div elem="icon"></div>
+                <div elem="icon" class="js-show-next"></div>
                 Нажми на рычаг - перейдем к действиям !
             </div>
         </div>
     </div>
 </section>
-<section block="nefackt">
+<div class='richagblock show'>
+<section block="nefackt" class="hide-mobile">
     <div class="container">
         <div class="row">
             <h2 elem="title">НО НЕ ФАКТ,<span>что это будем делать мы</span></h2>
@@ -274,7 +277,7 @@
         </div>
     </div>
 </section>
-<section block="undestend">
+<section block="undestend" class="hide-mobile">
     <div class="container">
         <div class="row">
             <h2 class="header__title" elem="title">
@@ -300,7 +303,7 @@
         </div>
     </div>
 </section>
-<section block="rasstavim">
+<section block="rasstavim" class="hide-mobile">
     <div class="container">
         <div class="row">
             <h2 class="nefackt__title" elem="title">РАССТАВЛЯЕМ ТОЧКИ НАД "i"<span class="green">разница между хорошим и плохим</span><span>интернет-маркетингом</span></h2>
@@ -325,7 +328,7 @@
         </div>
     </div>
 </section>
-<section block="agencij">
+<section block="agencij" class="hide-mobile">
     <div class="container">
         <div class="row">
             <h2 class="nefackt__title" elem="title" mod="icon:megafon">ТИПЫ АГЕНТСТВ</h2>
@@ -372,7 +375,7 @@
         </div>
     </div>
 </section>
-<section block="vam">
+<section block="vam" class="hide-mobile">
     <div class="container">
         <div class="row">
             <h2 class="nefackt__title" elem="title" >ВАМ <span class="green">не нужны наши <br>услуги, </span> <span>если ...</span></h2>
@@ -387,7 +390,7 @@
         </div>
     </div>
 </section>
-<section block="processi">
+<section block="processi" class="hide-mobile">
     <div class="container">
         <div class="row">
             <h2 class="nefackt__title" elem="title" mod="icon:proces">ПРОЦЕССЫ, всем по местам!</h2>
@@ -423,7 +426,7 @@
         </div>
     </div>
 </section>
-<div block="formchose">
+<div block="formchose" class="hide-mobile">
     <div class="container">
         <div class="row">
             <div elem="title">Онлайн-презентация</span></div>
@@ -562,24 +565,24 @@
                     <div elem="desc">
                         <div elem="desc" mod="img:b1">
                             <img src="./images/vtb-l.png" alt="">
-                            <img src="./images/veb-l.png" alt="">
+                            <img src="./images/veb-l.png" alt="" class="hide-mobile" >
                         </div>
-                        Внедрение crm, полный пересмотр подхода к продажам; <br>
-                        построение отдела продаж и регионального подразделения
+                        Внедрение crm, полный пересмотр подхода к продажам; <span class="hide-mobile"><br>
+                        построение отдела продаж и регионального подразделения</span>
                     </div>
                     <div elem="desc">
                         <div elem="desc" mod="img:b2">
                             <img src="./images/rd-1.png" alt="">
                             <img src="./images/rd-2.png" alt="">
-                            <img src="./images/b-1.png" alt="">
+                            <img src="./images/b-1.png" alt=""  class="hide-mobile">
                         </div>
                         Аудит эффективности рекламных каналов (в т.ч. smm), <br>
-                        анализ конкурентов, разработка стратегии, аудит рекламных <br>
-                        каналов, консультирование по вопросам стратегии
+                        анализ конкурентов, разработка стратегии<span class="hide-mobile">, аудит рекламных <br>
+                        каналов, консультирование по вопросам стратегии</span>
                     </div>
                     <div elem="desc">
                         <div elem="desc" mod="img:b3">
-                            <img src="./images/viatti.png" alt="">
+                            <img src="./images/viatti.png" alt=""  class="hide-mobile">
                             <img src="./images/kama.png" alt="">
                         </div>
                         Аудит подрядчиков
@@ -587,24 +590,26 @@
                     <div elem="desc">
                         <div elem="desc" mod="img:b4">
                             <img src="./images/jaguar.png" alt="">
-                            <img src="./images/land.png" alt="">
+                            <img src="./images/land.png" alt="" class="hide-mobile" >
                         </div>
                         Анализ контекстной рекламы + стратегия по работе <br>
                         с репутацией + участие в конференции + концепция <br>
-                        по омоложению аудитории, аудит подрядчиков <br>
-                        по маркетингу
+                        по омоложению аудитории<span class="hide-mobile">, аудит подрядчиков <br>
+                        по маркетингу</span>
                     </div>
                     <div elem="desc">
                         <div elem="desc" mod="img:b5">
                             <img src="./images/oblako24.png" alt="">
-                            <img src="./images/mixmag.png" alt="">
+                            <img src="./images/land.png" alt="" class="show-modile" >
+                            <img src="./images/mixmag.png" alt="" class="hide-mobile">
                             <img src="./images/ctrl.png" alt="">
-                            <img src="./images/protrener.png" alt="">
+                            <img src="./images/protrener.png" alt="" class="hide-mobile">
                             <img src="./images/bmw.png" alt="">
                             <img src="./images/goodplace.png" alt="">
-                            <img src="./images/lexus.png" alt="">
-                            <img src="./images/perlina.png" alt="">
-                            <img src="./images/hyndai.png" alt="">
+                            <img src="./images/lexus.png" alt="" class="hide-mobile">
+                            <img src="./images/perlina.png" alt="" class="hide-mobile">
+                            <img src="./images/hyndai.png" alt="" class="hide-mobile">
+                            <img src="./images/porshe.png" alt="" class="show-modile">
                         </div>
                         + Десятки других компаний, включая застройщиков, салоны <br>
                         красоты, мебельные дизайн-студии, центры развития и др.
@@ -612,6 +617,7 @@
                 </div>
             </div>
             <h2 class="nefackt__title" elem="title"  mod="icon:missij">НАША МИССИЯ</h2>
+            <div elem="mozgi-small">МОЗГ, <br>КОНТРОЛИРУЮЩИЙ <br>ВАШ МАРКЕТИНГ</div>
             <div class="form__row-flex">
                 <div class="etblock__colum">
                     <div class="vam__list">
@@ -621,18 +627,19 @@
                             <li>Помогаем принимать правильные <br>управленческие решения</li>
                         </ol>
                     </div>
-                    <div block="form">
+                    <div block="form" class="hide-mobile">
                         <div elem="row-flex">
                             <div elem="item" mod="block:240">
                                 <input type="submit" elem="submit" mod="mod:type2" value="С ONLY STRATEGY">
                             </div>
                             <div elem="item" mod="block:110">
-                                <input type="submit" elem="submit" mod="mod:type3" value="БЕЗ">
+                                <input type="submit" elem="submit" class="js-show-bez-btn" mod="mod:type3" value="БЕЗ">
                             </div>
                         </div>
                         <div elem="row-flex">
                             <div elem="item" mod="block:240">
-                                <h3 elem="titleh3">МОЗГ, <br>КОНТРОЛИРУЮЩИЙ <br>ВАШ МАРКЕТИНГ</h3>
+                                <h3 elem="titleh3" class="show js-show-bez">МОЗГ, <br>КОНТРОЛИРУЮЩИЙ <br>ВАШ МАРКЕТИНГ</h3>
+                                <h3 elem="titleh3" class="gray js-show-bez">НЕТ, ЭТО <br>НЕ ГРЕЦКИЙ ОРЕХ :( <br></h3>
                             </div>
                             <div elem="item" mod="block:110">
                                 <img elem="net" src="./images/nenagimat.png" alt="">
@@ -640,8 +647,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="etblock__colum text-center">
-                    <img src="./images/big-mozg.png" elem="mozgi" alt="">
+                <div class="etblock__colum text-center hide-mobile">
+                    <img src="./images/big-mozg.png" elem="mozgi" class="show js-show-bez" alt="">
+                    <img src="./images/mozgi-bez.png" elem="mozgi" class="js-show-bez" alt="">
                 </div>
             </div>
         </div>
@@ -703,7 +711,7 @@
                     </div>
                 </div>
             </div>
-            <div block="form"  mod="bor:bot">
+            <div block="form" mod="bor:bot" class="top">
                 <div elem="text18" mod="pad:b1">Итого (предварительная) разовая стоимость оптимизации ваших ежемесячных расходов:</div>
                 <div block="price"><span elem="summa">47 500</span>рублей</div>
                 <div elem="text18" mod="pad:b2">Ага, недешево. но ведь это всего какие-то пару % от вашего годового бюджета :) <br>Или меньше? Давайте точно рассчитаем вместе:</div>
@@ -794,3 +802,4 @@
         </div>
     </div>
 </section>
+</div>

@@ -26,7 +26,7 @@
 <div class="main">
 <header class="header">
     <div class="header__menu">
-        <span class="header__menu-btn">
+        <span class="js-menu-show header__menu-btn">
             <span class="header__menu-polos"></span>
         </span>
     </div>
@@ -35,7 +35,7 @@
     </div>
     <div class="header__phone">
         <span class="header__phone-text">или просто <br>наберите</span>
-        <a href="#" class="header__phone-link">8 800 <strong>300 40 50</strong></a>
+        <a href="tel:8" class="header__phone-link">8 800 <strong>300 40 50</strong></a>
     </div>
     <div class="container">
         <div class="row">
@@ -45,9 +45,41 @@
                 <span>БЕЗ СТАНДАРТНЫХ "АУДИТОВ"</span>
             </h1>
             <div class="header__noshits">*Мы первые, кто начал решать данную проблему в России, сэкономив уже десятки миллионов бюджета наших клиентов.</div>
+            <div class="show-modile">
+                <div class="form">
+                    <form>
+                        <div class="form__row-flex">
+                            <div class="form__item">
+                                <input type="submit" value="&#x421;&#x443;&#x442;&#x44C; &#x432;&#x43E;&#x43F;&#x440;&#x43E;&#x441;&#x430;" class="form__submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </header>
+<div class="header-menu">
+    <div class="header-menu__top">
+        <span class="js-menu-show header-menu__close"></span>
+        <span class="header-menu__logo"><img src="./images/logo-black.png" alt=""></span>
+        <a href="tel:8" class="header-menu__phone">8 800 <strong>300 40 50</strong></a>
+    </div>
+    <nav>
+        <ul>
+            <li class="active"><a href="#">Зачем</a></li>
+            <li><a href="#">Что</a></li>
+            <li><a href="#">Для кого</a></li>
+            <li><a href="#">Тонкости</a></li>
+            <li><a href="#">Процессы</a></li>
+            <li><a href="#">Кейсы</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">F.A.Q.</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+</div>
 
 <section class="nda">
     <div class="container">
@@ -55,51 +87,53 @@
             <h2 class="nda__title">ЗАПРОСИТЬ NDA</h2>
             <div class="nda__desc">*Договор о неразглашении ваших данных</div>
             <div class="form">
-                <div class="form__row-flex">
-                    <div class="form__item">
-                        <input type="text" name="ipn1" placeholder="&#x420;&#x435;&#x43A;&#x432;&#x438;&#x437;&#x438;&#x442;&#x44B;" class="form__text">
+                <form>
+                    <div class="form__row-flex">
+                        <div class="form__item">
+                            <input type="text" name="ipn1" placeholder="&#x420;&#x435;&#x43A;&#x432;&#x438;&#x437;&#x438;&#x442;&#x44B;" class="form__text">
+                        </div>
+                        <div class="form__item">
+                            <input type="text" name="ipn2" placeholder="E-mail" class="form__text">
+                        </div>
+                        <div class="form__item form__item_block_small">
+                            <input type="text" name="ipn3" placeholder="&#x422;&#x435;&#x43B;&#x435;&#x444;&#x43E;&#x43D;" class="form__text">
+                        </div>
+                        <div class="form__item form__item_block_file">
+                            <label for="file">Прикрепить документ</label><input type="file" name="" id="file" class="form__file">
+                        </div>
                     </div>
-                    <div class="form__item">
-                        <input type="text" name="ipn2" placeholder="E-mail" class="form__text">
+                    <div class="form__row-flex">
+                        <div class="form__item">
+                            <input type="submit" value="&#x417;&#x430;&#x43F;&#x440;&#x43E;&#x441;&#x438;&#x442;&#x44C;" class="form__submit">
+                        </div>
                     </div>
-                    <div class="form__item form__item_block_small">
-                        <input type="text" name="ipn3" placeholder="&#x422;&#x435;&#x43B;&#x435;&#x444;&#x43E;&#x43D;" class="form__text">
-                    </div>
-                    <div class="form__item form__item_block_file">
-                        <label for="file">Прикрепить документ</label><input type="file" name="" id="file" class="form__file">
-                    </div>
-                </div>
-                <div class="form__row-flex">
-                    <div class="form__item">
-                        <input type="submit" value="&#x417;&#x430;&#x43F;&#x440;&#x43E;&#x441;&#x438;&#x442;&#x44C;" class="form__submit">
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
 </section>
-<div class="formchose">
+<div class="hide-mobile formchose">
     <div class="container">
         <div class="row">
             <div class="formchose__title formchose__title_icon_plan">Я <span>(необходимо выбрать один вариант)</span></div>
             <div class="form form_pad_bot">
                 <div class="form__row-flex">
                     <div class="form__item form__item_check_box">
-                        <input type="checkbox" checked name="" id="cb1"><label for="cb1">Владелец бизнеса</label>
+                        <input type="radio" checked name="vlad" id="cb1"><label for="cb1">Владелец бизнеса</label>
                     </div>
                     <div class="form__item form__item_check_box">
-                        <input type="checkbox" name="" id="cb2"><label for="cb2">Управляющий</label>
+                        <input type="radio" name="vlad" id="cb2"><label for="cb2">Управляющий</label>
                     </div>
                     <div class="form__item form__item_check_box">
-                        <input type="checkbox" name="" id="cb3"><label for="cb3">IT-специалист</label>
+                        <input type="radio" name="vlad" id="cb3"><label for="cb3">IT-специалист</label>
                     </div>
                     <div class="form__item form__item_check_box">
-                        <input type="checkbox" name="" id="cb4"><label for="cb4">Управляющий</label>
+                        <input type="radio" name="vlad" id="cb4"><label for="cb4">Управляющий</label>
                     </div>
                 </div>
                 <div class="form__row-flex">
                     <div class="form__item form__item_check_box">
-                        <input type="checkbox" checked name="" id="cb5"><label for="cb5">Маркетолог</label>
+                        <input type="radio" name="vlad" id="cb5"><label for="cb5">Маркетолог</label>
                     </div>
                     <div class="form__item form__item_block_3x4">
                         <input type="text" name="ipn3" placeholder="&#x414;&#x440;&#x443;&#x433;&#x430;&#x44F; &#x434;&#x43E;&#x43B;&#x436;&#x43D;&#x43E;&#x441;&#x442;&#x44C;" class="form__text">
@@ -158,7 +192,7 @@
         </div>
     </div>
 </div>
-<section class="question">
+<section class="hide-mobile question">
     <div class="container">
         <div class="row">
             <div class="question__title">СУТЬ ВОПРОСА</div>
@@ -212,7 +246,7 @@
         </div>
     </div>
 </section>
-<section class="itog-block">
+<section class="hide-mobile itog-block">
     <div class="container">
         <div class="row">
             <h2 class="itog-block__title">А в итоге...</h2>
@@ -226,13 +260,14 @@
                 <span>их кто-то должен контролировать</span>
             </h3>
             <div class="richag">
-                <div class="richag__icon"></div>
+                <div class="js-show-next richag__icon"></div>
                 Нажми на рычаг - перейдем к действиям !
             </div>
         </div>
     </div>
 </section>
-<section class="nefackt">
+<div class="richagblock show">
+<section class="hide-mobile nefackt">
     <div class="container">
         <div class="row">
             <h2 class="nefackt__title">НО НЕ ФАКТ,<span>что это будем делать мы</span></h2>
@@ -325,7 +360,7 @@
         </div>
     </div>
 </section>
-<section class="undestend">
+<section class="hide-mobile undestend">
     <div class="container">
         <div class="row">
             <h2 class="header__title undestend__title">
@@ -351,7 +386,7 @@
         </div>
     </div>
 </section>
-<section class="rasstavim">
+<section class="hide-mobile rasstavim">
     <div class="container">
         <div class="row">
             <h2 class="nefackt__title rasstavim__title">РАССТАВЛЯЕМ ТОЧКИ НАД "i"<span class="green">разница между хорошим и плохим</span><span>интернет-маркетингом</span></h2>
@@ -376,7 +411,7 @@
         </div>
     </div>
 </section>
-<section class="agencij">
+<section class="hide-mobile agencij">
     <div class="container">
         <div class="row">
             <h2 class="nefackt__title agencij__title agencij__title_icon_megafon">ТИПЫ АГЕНТСТВ</h2>
@@ -423,7 +458,7 @@
         </div>
     </div>
 </section>
-<section class="vam">
+<section class="hide-mobile vam">
     <div class="container">
         <div class="row">
             <h2 class="nefackt__title vam__title">ВАМ <span class="green">не нужны наши <br>услуги, </span> <span>если ...</span></h2>
@@ -438,7 +473,7 @@
         </div>
     </div>
 </section>
-<section class="processi">
+<section class="hide-mobile processi">
     <div class="container">
         <div class="row">
             <h2 class="nefackt__title processi__title processi__title_icon_proces">ПРОЦЕССЫ, всем по местам!</h2>
@@ -474,7 +509,7 @@
         </div>
     </div>
 </section>
-<div class="formchose">
+<div class="hide-mobile formchose">
     <div class="container">
         <div class="row">
             <div class="formchose__title">Онлайн-презентация</div>
@@ -613,24 +648,24 @@
                     <div class="etblock__desc">
                         <div class="etblock__desc etblock__desc_img_b1">
                             <img src="./images/vtb-l.png" alt="">
-                            <img src="./images/veb-l.png" alt="">
+                            <img src="./images/veb-l.png" alt="" class="hide-mobile">
                         </div>
-                        Внедрение crm, полный пересмотр подхода к продажам; <br>
-                        построение отдела продаж и регионального подразделения
+                        Внедрение crm, полный пересмотр подхода к продажам; <span class="hide-mobile"><br>
+                        построение отдела продаж и регионального подразделения</span>
                     </div>
                     <div class="etblock__desc">
                         <div class="etblock__desc etblock__desc_img_b2">
                             <img src="./images/rd-1.png" alt="">
                             <img src="./images/rd-2.png" alt="">
-                            <img src="./images/b-1.png" alt="">
+                            <img src="./images/b-1.png" alt="" class="hide-mobile">
                         </div>
                         Аудит эффективности рекламных каналов (в т.ч. smm), <br>
-                        анализ конкурентов, разработка стратегии, аудит рекламных <br>
-                        каналов, консультирование по вопросам стратегии
+                        анализ конкурентов, разработка стратегии<span class="hide-mobile">, аудит рекламных <br>
+                        каналов, консультирование по вопросам стратегии</span>
                     </div>
                     <div class="etblock__desc">
                         <div class="etblock__desc etblock__desc_img_b3">
-                            <img src="./images/viatti.png" alt="">
+                            <img src="./images/viatti.png" alt="" class="hide-mobile">
                             <img src="./images/kama.png" alt="">
                         </div>
                         Аудит подрядчиков
@@ -638,24 +673,26 @@
                     <div class="etblock__desc">
                         <div class="etblock__desc etblock__desc_img_b4">
                             <img src="./images/jaguar.png" alt="">
-                            <img src="./images/land.png" alt="">
+                            <img src="./images/land.png" alt="" class="hide-mobile">
                         </div>
                         Анализ контекстной рекламы + стратегия по работе <br>
                         с репутацией + участие в конференции + концепция <br>
-                        по омоложению аудитории, аудит подрядчиков <br>
-                        по маркетингу
+                        по омоложению аудитории<span class="hide-mobile">, аудит подрядчиков <br>
+                        по маркетингу</span>
                     </div>
                     <div class="etblock__desc">
                         <div class="etblock__desc etblock__desc_img_b5">
                             <img src="./images/oblako24.png" alt="">
-                            <img src="./images/mixmag.png" alt="">
+                            <img src="./images/land.png" alt="" class="show-modile">
+                            <img src="./images/mixmag.png" alt="" class="hide-mobile">
                             <img src="./images/ctrl.png" alt="">
-                            <img src="./images/protrener.png" alt="">
+                            <img src="./images/protrener.png" alt="" class="hide-mobile">
                             <img src="./images/bmw.png" alt="">
                             <img src="./images/goodplace.png" alt="">
-                            <img src="./images/lexus.png" alt="">
-                            <img src="./images/perlina.png" alt="">
-                            <img src="./images/hyndai.png" alt="">
+                            <img src="./images/lexus.png" alt="" class="hide-mobile">
+                            <img src="./images/perlina.png" alt="" class="hide-mobile">
+                            <img src="./images/hyndai.png" alt="" class="hide-mobile">
+                            <img src="./images/porshe.png" alt="" class="show-modile">
                         </div>
                         + Десятки других компаний, включая застройщиков, салоны <br>
                         красоты, мебельные дизайн-студии, центры развития и др.
@@ -663,6 +700,7 @@
                 </div>
             </div>
             <h2 class="nefackt__title processi__title processi__title_icon_missij">НАША МИССИЯ</h2>
+            <div class="processi__mozgi-small">МОЗГ, <br>КОНТРОЛИРУЮЩИЙ <br>ВАШ МАРКЕТИНГ</div>
             <div class="form__row-flex">
                 <div class="etblock__colum">
                     <div class="vam__list">
@@ -672,18 +710,19 @@
                             <li>Помогаем принимать правильные <br>управленческие решения</li>
                         </ol>
                     </div>
-                    <div class="form">
+                    <div class="hide-mobile form">
                         <div class="form__row-flex">
                             <div class="form__item form__item_block_240">
                                 <input type="submit" value="&#x421; ONLY STRATEGY" class="form__submit form__submit_mod_type2">
                             </div>
                             <div class="form__item form__item_block_110">
-                                <input type="submit" value="&#x411;&#x415;&#x417;" class="form__submit form__submit_mod_type3">
+                                <input type="submit" class="js-show-bez-btn form__submit form__submit_mod_type3" value="&#x411;&#x415;&#x417;">
                             </div>
                         </div>
                         <div class="form__row-flex">
                             <div class="form__item form__item_block_240">
-                                <h3 class="form__titleh3">МОЗГ, <br>КОНТРОЛИРУЮЩИЙ <br>ВАШ МАРКЕТИНГ</h3>
+                                <h3 class="show js-show-bez form__titleh3">МОЗГ, <br>КОНТРОЛИРУЮЩИЙ <br>ВАШ МАРКЕТИНГ</h3>
+                                <h3 class="gray js-show-bez form__titleh3">НЕТ, ЭТО <br>НЕ ГРЕЦКИЙ ОРЕХ :( <br></h3>
                             </div>
                             <div class="form__item form__item_block_110">
                                 <img src="./images/nenagimat.png" alt="" class="form__net">
@@ -691,8 +730,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="etblock__colum text-center">
-                    <img src="./images/big-mozg.png" alt="" class="processi__mozgi">
+                <div class="etblock__colum text-center hide-mobile">
+                    <img src="./images/big-mozg.png" class="show js-show-bez processi__mozgi" alt="">
+                    <img src="./images/mozgi-bez.png" class="js-show-bez processi__mozgi" alt="">
                 </div>
             </div>
         </div>
@@ -754,7 +794,7 @@
                     </div>
                 </div>
             </div>
-            <div class="form form_bor_bot">
+            <div class="top form form_bor_bot">
                 <div class="form__text18 form__text18_pad_b1">Итого (предварительная) разовая стоимость оптимизации ваших ежемесячных расходов:</div>
                 <div class="price"><span class="price__summa">47 500</span>рублей</div>
                 <div class="form__text18 form__text18_pad_b2">Ага, недешево. но ведь это всего какие-то пару % от вашего годового бюджета :) <br>Или меньше? Давайте точно рассчитаем вместе:</div>
@@ -845,6 +885,7 @@
         </div>
     </div>
 </section>
+</div>
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -854,7 +895,12 @@
         </div>
     </div>
 </footer>
-
+<div id="message" class="modall">
+    <div class="modall__inner">
+        <div class="modall__title">Кп - ваше!</div>
+        <div class="modall__text">А еще вы получаете бесплатную консультацию менеджера, <br>который уже принял вашу заявку ;)</div>
+    </div>
+</div>
 </div>
 
 <!-- scripts -->

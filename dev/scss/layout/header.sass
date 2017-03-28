@@ -1,11 +1,20 @@
+.main
+  overflow: hidden
+
 .header
   background: url(../images/header-bg.jpg) no-repeat center top #000
   background-size: 100% auto
-  height: 100vh
+  @media (min-width: 769px)
+    height: 100vh
+  .show-modile
+    padding-top: 23px
   &__menu
     position: absolute
     left: 40px
     top: 40px
+    @media (max-width: 768px)
+      left: 20px
+      top: 20px
     &-btn
       width: 60px
       height: 59px
@@ -15,7 +24,12 @@
       right: 0
       cursor: pointer
       padding: 19px 18px
+      cursor: pointer
       border: rgba(#fff, 0.2) solid 2px
+      @media (max-width: 768px)
+        width: 40px
+        height: 40px
+        padding: 12px 11px
     &-polos
       margin-top: 8px
       margin-bottom: 8px
@@ -23,6 +37,9 @@
       height: 2px
       position: relative
       background: #ffffff
+      @media (max-width: 768px)
+        margin-top: 5px
+        margin-bottom: 5px
       &:before
         content: ''
         height: 2px
@@ -33,6 +50,8 @@
         left: 0
         right: 0
         position: absolute
+        @media (max-width: 768px)
+          top: -5px
       &:after
         position: absolute
         left: 0
@@ -44,10 +63,16 @@
         width: 100%
         background: #ffffff
         margin-top: 6px
+        @media (max-width: 768px)
+          bottom: -5px
   &__logotip
     position: absolute
     left: 130px
     top: 40px
+    @media (max-width: 768px)
+      left: 80px
+      width: 80px
+      top: 20px
   &__phone
     position: absolute
     right: 58px
@@ -56,6 +81,10 @@
     font-family: $ffOpenSansLight
     display: table
     vertical-align: middle
+    @media (max-width: 768px)
+      position: absolute
+      right: 20px
+      top: 20px
     &-link
       color: #fff
       text-transform: uppercase
@@ -68,6 +97,17 @@
       letter-spacing: -0.5px
       strong
         font-family: $ffOpenSansBold
+      @media (max-width: 768px)
+        text-indent: -9999px
+        border: rgba(#fff, 0.2) solid 2px
+        display: inline-block
+        width: 40px
+        height: 40px
+        &:after
+          content: ''
+          display: inline-block
+          +block-center
+          @include sprite($phone-logo)
     &-text
       font-family: $ffOpenSansSBold
       font-size: 0.8571rem
@@ -77,6 +117,8 @@
       vertical-align: middle
       display: table-cell
       padding-right: 14px
+      @media (max-width: 768px)
+        display: none
   &__title
     font-family: $ffOpenSansBold
     font-size: 3.286rem
@@ -84,9 +126,19 @@
     color: #ffffff
     margin-left: -4px
     margin-bottom: 28px
+    @media (max-width: 768px)
+      font-size: 1.286rem
+      padding-top: 135px
+      line-height: 1.714rem
+      margin-left: 0
+      margin-bottom: 13px
+      br
+        display: none
     span
       font-family: $ffOpenSansLight
       color: #52ac62
+      @media (max-width: 768px)
+        display: block
     &:after
       content: ''
       display: block
@@ -95,17 +147,26 @@
       height: 3px
       margin-left: 2px
       margin-top: 20px
+      @media (max-width: 768px)
+        display: none
   &__noshits
     background: url(../images/no-shits-header.png) no-repeat right center
     min-height: 50px
     padding-right: 60px
     color: #ffffff
     line-height: 50px
+    @media (max-width: 768px)
+      padding-right: 0
+      background: none
+      font-size: 0.8571rem
+      line-height: 1.143rem
 
   .container
     .row
-      width: 940px
-      padding-bottom: 40px
-      height: 100vh
-      display: table-cell
-      vertical-align: bottom
+      padding-bottom: 10px
+      @media (min-width: 769px)
+        width: 940px
+        height: 100vh
+        padding-bottom: 40px
+        display: table-cell
+        vertical-align: bottom

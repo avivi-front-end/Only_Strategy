@@ -66,4 +66,81 @@ $(function() {
         $('.js-real-slider-curent').text(nextSlide+1);
     });
 
+    $(document).on('click','.js-menu-show', function () {
+        $('.header-menu').toggleClass('open');
+    })
+
+    $('.js-show-next').on('click', function () {
+        $(this).toggleClass('show');
+        $('.richagblock').toggleClass('show');
+    });
+
+    $('.js-show-bez-btn').on('click', function () {
+        $('.js-show-bez').toggleClass('show');
+    })
+});
+
+$(window).load(function(){
+    setTimeout(function(){$('.richagblock').removeClass('show');}, 10);
+});
+
+$(document).on('click.modal', 'a[rel="modal:close"]', function(event) {
+    // event.preventDefault();
+    var modalBlock = $(this).parents('.modall');
+    $('.modalbgblock').remove();
+    modalBlock.find('.close-modal').remove();
+    modalBlock.removeClass('show');
+});
+
+$(document).on('click.modal', '.modalbgblock', function(event) {
+    event.preventDefault();
+    var idHref = $(this).data('modalblock'),
+        modalBlock = $(idHref);
+    $('.modalbgblock').remove();
+    modalBlock.find('.close-modal').remove();
+    modalBlock.removeClass('show');
+});
+
+$(document).on('click.modal', 'a[rel="modal:open"]', function(event) {
+    event.preventDefault();
+    if ($('.modalbgblock').length > 0 ) {
+        var idHref = $('.modalbgblock').data('modalblock'),
+            modalBlock = $(idHref);
+
+        $('.modalbgblock').remove();
+        modalBlock.find('.close-modal').remove();
+        modalBlock.removeClass('show');
+    }
+    var bgModal = $('<span class="modalbgblock overlay"></span>'),
+        modalClose = $('<a href="#close-modal" rel="modal:close" class="modall__close close-modal"></a>'),
+        idHref = $(this).attr('href'),
+        formSend = $(this).data('formsend'),
+        modalBlock = $(idHref);
+
+    bgModal.data('modalblock',idHref);
+    $('body').append(bgModal);
+    modalBlock.append(modalClose);
+    modalBlock.addClass('show');
+});
+
+$(document).on('submit','form', function (event) {
+    event.preventDefault();
+    if ($('.modalbgblock').length > 0 ) {
+        var idHref = $('.modalbgblock').data('modalblock'),
+            modalBlock = $(idHref);
+
+        $('.modalbgblock').remove();
+        modalBlock.find('.close-modal').remove();
+        modalBlock.removeClass('show');
+    }
+    var bgModal = $('<span class="modalbgblock overlay"></span>'),
+        modalClose = $('<a href="#close-modal" rel="modal:close" class="modall__close close-modal"></a>'),
+        idHref = '#message',
+        modalBlock = $(idHref);
+
+    bgModal.data('modalblock',idHref);
+    $('body').append(bgModal);
+    modalBlock.append(modalClose);
+    modalBlock.addClass('show');
+    return false;
 });

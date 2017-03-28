@@ -1,0 +1,112 @@
+.header-menu
+  position: fixed
+  left: 0
+  top: 0
+  bottom: 0
+  width: 640px
+  background: #ffffff
+  opacity: 0
+  z-index: 100
+  visibility: hidden
+  transition: opacity 0.5s
+  @media (max-width: 768px)
+    width: 100%
+  &.open
+    opacity: 1
+    visibility: visible
+    transition: opacity 0.5s
+  &__top
+    padding: 40px 40px 0
+    @media (max-width: 768px)
+      padding: 20px 0 16px
+      margin-left: 20px
+      margin-right: 20px
+      border-bottom: #e5e5e5 solid 2px
+      margin-bottom: 15px
+  &__logo
+    @media (max-width: 768px)
+      height: 40px
+      img
+        height: 40px
+  &__close
+    width: 60px
+    height: 60px
+    margin-right: 25px
+    display: inline-block
+    border: #cccccc solid 2px
+    position: relative
+    cursor: pointer
+    @media (max-width: 768px)
+      width: 40px
+      height: 40px
+      margin-right: 20px
+    &:after
+      content: ''
+      display: inline-block
+      +block_center
+      @include sprite($close-menu)
+  &__phone
+    @media (max-width: 768px)
+      display: inline-block
+      border: #cccccc solid 2px
+      position: relative
+      cursor: pointer
+      float: right
+      width: 40px
+      height: 40px
+      text-indent: -9999px
+      &:after
+        content: ''
+        display: inline-block
+        +block_center
+        @include sprite($phone-logo-black)
+  nav
+    display: block
+    ul
+      padding-top: 41px
+      display: block
+      @media (max-width: 768px)
+        padding-top: 0
+      li
+        display: block
+        list-style: none
+        padding-left: 128px
+        margin-bottom: 10px
+        position: relative
+        @media (max-width: 768px)
+          padding-left: 0
+          text-align: center
+          margin-bottom: 8px
+        a
+          font-family: $ffOpenSansLight
+          color: #000000
+          display: inline-block
+          padding-left: 40px
+          padding-right: 40px
+          font-size: 1.857rem
+          text-decoration: none
+          background: #ffffff
+          position: relative
+          z-index: 2
+          &:hover
+            color: $colorGreen
+          @media (max-width: 768px)
+            font-size: 16px
+            padding-left: 20px
+            padding-right: 20px
+        &.active, &:hover
+          a
+            color: $colorGreen
+          &:before
+            z-index: 1
+            display: block
+            content: ''
+            height: 2px
+            background: $colorGreen
+            left: 0
+            top: 50%
+            position: absolute
+            margin-top: 5px
+            width: 100%
+            @media (max-width: 768px)
+              margin-top: -1px
