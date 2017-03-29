@@ -98,6 +98,28 @@ $(function() {
         $('.undestend__item').fadeOut();
         $(idShow).fadeIn();
     });
+
+    $('form').each(function(){
+        $(this).validate({
+            rules: {
+                name: {
+                    required: true
+                },
+                phone: {
+                    required: true
+                },
+            },
+            messages: {
+                name: {
+                    required: 'Поле должно быть заполнено'
+                },
+                phone: {
+                    required: 'Поле должно быть заполнено',
+                    digits: 'Только цифры'
+                },
+            }
+        });
+    });
 });
 
 $(window).load(function(){
