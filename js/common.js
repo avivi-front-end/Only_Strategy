@@ -75,9 +75,29 @@ $(function() {
         $('.richagblock').toggleClass('show');
     });
 
-    $('.js-show-bez-btn').on('click', function () {
-        $('.js-show-bez').toggleClass('show');
-    })
+    $('.js-show-bez-btn-no').on('click', function () {
+        $('.js-show-bez-no').addClass('show');
+        $('.js-show-bez-yes').removeClass('show');
+    });
+
+    $('.js-show-bez-btn-yes').on('click', function () {
+        $('.js-show-bez-no').removeClass('show');
+        $('.js-show-bez-yes').addClass('show');
+    });
+
+    $('.phone_mask').mask("+7 (000) 000-00-00", {placeholder: "+7 (000) 000-00-00"});
+
+    $('.js_vakans').on('change',function(){
+        var idShow = '#'+$('.js_vakans:checked').val();
+        $('.undestend__item').fadeOut();
+        $(idShow).fadeIn();
+    });
+
+    $('.js_vakans_text').on('change',function(){
+        var idShow = '#sh6'
+        $('.undestend__item').fadeOut();
+        $(idShow).fadeIn();
+    });
 });
 
 $(window).load(function(){
@@ -144,3 +164,17 @@ $(document).on('submit','form', function (event) {
     modalBlock.addClass('show');
     return false;
 });
+
+var anchors = (function() {
+    $('.js-scroll-anchor').on('click', function(e) {
+        e.preventDefault();
+        var changePosition = 0;
+        if ($.attr(this, 'href') == '#made-in') {
+            changePosition = 75;
+        }
+        $('.header-menu').removeClass('open');
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top - changePosition
+        }, 500);
+    });
+})();

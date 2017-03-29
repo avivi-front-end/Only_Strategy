@@ -651,10 +651,11 @@ html
 
 .undestend
   padding-top: 89px
-  padding-bottom: 107px
-  background: url("../images/undestend-bg.jpg") no-repeat center bottom #343434
-  -webkit-background-size: cover
-  background-size: cover
+  padding-bottom: 20px
+  background: url("../images/undestend-bg.jpg") no-repeat center top #000
+  background-size: 100% auto
+  &__item
+    padding-bottom: 99px
   .form
     padding-top: 25px
   &__title
@@ -674,6 +675,8 @@ html
     text-indent: -2px
     color: $colorWhite07
     line-height: 1.514rem
+    strong
+      font-family: $ffOpenSansBold
   &__desc-form
     color: $colorWhite03
     font-size: 0.8571rem

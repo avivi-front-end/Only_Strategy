@@ -13,7 +13,7 @@
                             <input type="text" name="ipn2" elem="text" placeholder="E-mail">
                         </div>
                         <div elem="item" mod="block:small">
-                            <input type="text" name="ipn3" elem="text" placeholder="Телефон">
+                            <input type="text" name="ipn3" elem="text" class="phone_mask" placeholder="Телефон">
                         </div>
                         <div elem="item" mod="block:file">
                             <label for="file">Прикрепить документ</label><input type="file" name="" id="file" elem="file">
@@ -32,28 +32,29 @@
 <div block="formchose" class="hide-mobile">
     <div class="container">
         <div class="row">
+            <form>
             <div elem="title" mod="icon:plan">Я <span>(необходимо выбрать один вариант)</span></div>
             <div block="form" mod="pad:bot">
                 <div elem="row-flex">
                     <div elem="item" mod="check:box">
-                        <input type="radio" checked name="vlad" id="cb1"><label for="cb1">Владелец бизнеса</label>
+                        <input type="radio" class="js_vakans" name="vlad" value="sh1" id="cb1"><label for="cb1">Владелец бизнеса</label>
                     </div>
                     <div elem="item" mod="check:box">
-                        <input type="radio"  name="vlad" id="cb2"><label for="cb2">Управляющий</label>
+                        <input type="radio" class="js_vakans"  name="vlad" value="sh2" id="cb2"><label for="cb2">Управляющий</label>
                     </div>
                     <div elem="item" mod="check:box">
-                        <input type="radio"  name="vlad" id="cb3"><label for="cb3">IT-специалист</label>
+                        <input type="radio" class="js_vakans"  name="vlad" value="sh3" id="cb3"><label for="cb3">Sales</label>
                     </div>
                     <div elem="item" mod="check:box">
-                        <input type="radio"  name="vlad" id="cb4"><label for="cb4">Управляющий</label>
+                        <input type="radio"  class="js_vakans" name="vlad" value="sh4" id="cb4"><label for="cb4">Маркетолог</label>
                     </div>
                 </div>
                 <div elem="row-flex">
                     <div elem="item" mod="check:box">
-                        <input type="radio" name="vlad" id="cb5"><label for="cb5">Маркетолог</label>
+                        <input type="radio" class="js_vakans" name="vlad" value="sh5" id="cb5"><label for="cb5">IT-специалист</label>
                     </div>
                     <div elem="item" mod="block:3x4">
-                        <input type="text" name="ipn3" elem="text" placeholder="Другая должность">
+                        <input type="text"  class="js_vakans_text" name="ipn3" elem="text" placeholder="Другая должность">
                     </div>
                 </div>
             </div>
@@ -99,17 +100,18 @@
             <div block="form">
                 <div elem="row-flex">
                     <div elem="item">
-                        <input type="text" name="ipn3" elem="text" placeholder="Мой Телефон">
+                        <input type="text" name="ipn3" elem="text" class="phone_mask" placeholder="Мой Телефон">
                     </div>
                     <div elem="item">
                         <input type="submit" elem="submit" value="Жду помощи">
                     </div>
                 </div>
             </div>
+            </form>
         </div>
     </div>
 </div>
-<section block="question" class="hide-mobile">
+<section block="question" class="hide-mobile" id="sut">
     <div class="container">
         <div class="row">
             <div elem="title">СУТЬ ВОПРОСА</div>
@@ -212,7 +214,7 @@
                     <div elem="text">Не оказываем <br>digital-услуги  сами <br>и не пытаемся <br>продать вам <br>"своих знакомых"</div>
                 </div>
             </div>
-            <h2 elem="title">ОДНАКО,<span class="green">с подходящими компаниями</span><span>работаем по следующим направлениям</span></h2>
+            <h2 elem="title" id="">ОДНАКО,<span class="green">с подходящими компаниями</span><span>работаем по следующим направлениям</span></h2>
             <div block="odnako-block">
                 <div elem="item" mod="mod:1">
                     <div elem="number-pic">1.<img src="./images/odnako-1.png" alt=""></div>
@@ -277,33 +279,141 @@
         </div>
     </div>
 </section>
-<section block="undestend" class="hide-mobile">
+<section block="undestend" class="hide-mobile" id="under">
     <div class="container">
         <div class="row">
             <h2 class="header__title" elem="title">
                 МЫ ПОНИМАЕМ ВАС<br>
                 <span>и говорим на одном языке</span>
             </h2>
-            <div elem="title_sec">Владелец бизнеса</div>
-            <div elem="desc">Эти маркетологи-шмаркетологи занимают львиную долю ваших расходов, а эффект "как-то не очень"? <br>
-                Продавцы жалуются, что входящий поток - ни о чем?Бизнес растет не так быстро, как хотелось бы? <br>
-                Пришла пора навести порядок в интернете!</div>
-            <div block="form">
-                <div elem="row-flex">
-                    <div elem="item">
-                        <input type="text" name="ipn3" elem="text" placeholder="Мой Телефон">
+            <div elem="item" id="sh1">
+                <div elem="title_sec">Владелец бизнеса</div>
+                <div elem="desc">Эти маркетологи-шмаркетологи занимают львиную долю ваших расходов, а эффект "как-то не очень"? <br>
+                    Продавцы жалуются, что входящий поток - ни о чем?Бизнес растет не так быстро, как хотелось бы? <br>
+                    <strong>Пришла пора навести порядок в интернете!</strong></div>
+                <form>
+                    <div block="form">
+                        <div elem="row-flex">
+                            <div elem="item">
+                                <input type="text" name="ipn3" elem="text" class="phone_mask" placeholder="Мой Телефон">
+                            </div>
+                            <div elem="item" mod="block:big">
+                                <input type="submit" elem="submit" mod="mod:f14" value="Скачать КП спецально для меня">
+                            </div>
+                        </div>
                     </div>
-                    <div elem="item" mod="block:big">
-                        <input type="submit" elem="submit" mod="mod:f14" value="Скачать КП спецально для меня">
-                    </div>
-                </div>
+                </form>
+                <div elem="desc-form">* Это не "уловка", чтобы получить ваши контакты. После оставления номера <br>
+                    вы действительно получите интересную информацию</div>
             </div>
-            <div elem="desc-form">* Это не "уловка", чтобы получить ваши контакты. После оставления номера <br>
-                вы действительно получите интересную информацию</div>
+
+            <div elem="item" id="sh2">
+                <div elem="title_sec">Управляющий</div>
+                <div elem="desc">Уже много раз приходила мысль, что пора бы "послать" все эти веб-студии / digital-агентства?  <br>
+                    Есть предчувствие, что бюджет, за который вы несете ответственность, распределяется неэффективно? <br>
+                    <strong>Мы покажем им, где раки зимуют!</strong></div>
+                <form>
+                    <div block="form">
+                        <div elem="row-flex">
+                            <div elem="item">
+                                <input type="text" name="ipn3" elem="text" class="phone_mask" placeholder="Мой Телефон">
+                            </div>
+                            <div elem="item" mod="block:big">
+                                <input type="submit" elem="submit" mod="mod:f14" value="Скачать КП спецально для меня">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div elem="desc-form">* Это не "уловка", чтобы получить ваши контакты. После оставления номера <br>
+                    вы действительно получите интересную информацию</div>
+            </div>
+
+            <div elem="item" id="sh3">
+                <div elem="title_sec">Sales</div>
+                <div elem="desc">Заходов "в холодную" уже не хватает? где обещанные лиды?! почему никто не генерирует достаточно  <br>
+                    обращений? больше не нужно просить у руководства увеличить бюджет на маркетинг.  <br>
+                    <strong>Посмотрим, что можно сделать в действующих реалиях</strong></div>
+                <form>
+                    <div block="form">
+                        <div elem="row-flex">
+                            <div elem="item">
+                                <input type="text" name="ipn3" elem="text" class="phone_mask" placeholder="Мой Телефон">
+                            </div>
+                            <div elem="item" mod="block:big">
+                                <input type="submit" elem="submit" mod="mod:f14" value="Скачать КП спецально для меня">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div elem="desc-form">* Это не "уловка", чтобы получить ваши контакты. После оставления номера <br>
+                    вы действительно получите интересную информацию</div>
+            </div>
+
+            <div elem="item" id="sh4">
+                <div elem="title_sec">Маркетолог</div>
+                <div elem="desc">Такое ощущение, как будто вы делаете работу за подрядчиков, которым ваша же компания и платит, да?  <br>
+                    Эти ребята обнаглели настолько, что за ними все нужно проверять? Чего только стоит их последний "косяк".  <br>
+                    <strong>Теперь у вас есть "best friend", который разгрузит задачи</strong></div>
+                <form>
+                    <div block="form">
+                        <div elem="row-flex">
+                            <div elem="item">
+                                <input type="text" name="ipn3" elem="text" class="phone_mask" placeholder="Мой Телефон">
+                            </div>
+                            <div elem="item" mod="block:big">
+                                <input type="submit" elem="submit" mod="mod:f14" value="Скачать КП спецально для меня">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div elem="desc-form">* Это не "уловка", чтобы получить ваши контакты. После оставления номера <br>
+                    вы действительно получите интересную информацию</div>
+            </div>
+
+            <div elem="item" id="sh5">
+                <div elem="title_sec">IT-специалист</div>
+                <div elem="desc">Они не понимают, как важна каждая деталь в настройке сервера и cms? требуют от вас вовлечения  <br>
+                    в какой-то маркетинг, хотя это не ваша обязанность? Мы против делегирования непрофильных задач.  <br>
+                    <strong>Поможем сделать так, чтобы вы занимались только любимым делом</strong></div>
+                <form>
+                    <div block="form">
+                        <div elem="row-flex">
+                            <div elem="item">
+                                <input type="text" name="ipn3" elem="text" class="phone_mask" placeholder="Мой Телефон">
+                            </div>
+                            <div elem="item" mod="block:big">
+                                <input type="submit" elem="submit" mod="mod:f14" value="Скачать КП спецально для меня">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div elem="desc-form">* Это не "уловка", чтобы получить ваши контакты. После оставления номера <br>
+                    вы действительно получите интересную информацию</div>
+            </div>
+
+            <div elem="item" id="sh6">
+                <div elem="title_sec">Другая должность</div>
+                <div elem="desc">Возможно, вы бухгалтер, hr или даже племянник директора, на которого возложили ответственность  <br>
+                    по подбору "хороших ребят для интернета". Не важно,  <strong> мы все равно попробуем найти общий язык</strong></div>
+                <form>
+                    <div block="form">
+                        <div elem="row-flex">
+                            <div elem="item">
+                                <input type="text" name="ipn3" elem="text" class="phone_mask" placeholder="Мой Телефон">
+                            </div>
+                            <div elem="item" mod="block:big">
+                                <input type="submit" elem="submit" mod="mod:f14" value="Скачать КП спецально для меня">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div elem="desc-form">* Это не "уловка", чтобы получить ваши контакты. После оставления номера <br>
+                    вы действительно получите интересную информацию</div>
+            </div>
         </div>
     </div>
 </section>
-<section block="rasstavim" class="hide-mobile">
+<section block="rasstavim" class="hide-mobile" id="rasst">
     <div class="container">
         <div class="row">
             <h2 class="nefackt__title" elem="title">РАССТАВЛЯЕМ ТОЧКИ НАД "i"<span class="green">разница между хорошим и плохим</span><span>интернет-маркетингом</span></h2>
@@ -390,7 +500,7 @@
         </div>
     </div>
 </section>
-<section block="processi" class="hide-mobile">
+<section block="processi" class="hide-mobile" id="proces">
     <div class="container">
         <div class="row">
             <h2 class="nefackt__title" elem="title" mod="icon:proces">ПРОЦЕССЫ, всем по местам!</h2>
@@ -430,10 +540,11 @@
     <div class="container">
         <div class="row">
             <div elem="title">Онлайн-презентация</span></div>
+            <form>
             <div block="form">
                 <div elem="row-flex">
                     <div elem="item">
-                        <input type="text" name="ipn3" elem="text" placeholder="Мой Телефон">
+                        <input type="text" name="ipn3" elem="text" class="phone_mask" placeholder="Мой Телефон">
                     </div>
                     <div elem="item">
                         <input type="submit" elem="submit" value="Записаться">
@@ -443,10 +554,11 @@
                     </div>
                 </div>
             </div>
+            </form>
         </div>
     </div>
 </div>
-<section block="processi" mod="mod:padb">
+<section block="processi" mod="mod:padb" id="real">
     <div class="container">
         <div class="row">
             <h2 class="nefackt__title" elem="title" mod="icon:real">РЕАЛЬНЫЕ КЕЙСЫ из практики</h2>
@@ -515,7 +627,7 @@
                     </div>
                 </div>
             </div>
-            <div block="we">
+            <div block="we" id="we">
                 <div elem="big">МЫ</div>
                 <div elem="list">
                     <ol>
@@ -630,16 +742,16 @@
                     <div block="form" class="hide-mobile">
                         <div elem="row-flex">
                             <div elem="item" mod="block:240">
-                                <input type="submit" elem="submit" mod="mod:type2" value="С ONLY STRATEGY">
+                                <input type="button" elem="submit" class="js-show-bez-btn-yes" mod="mod:type2" value="С ONLY STRATEGY">
                             </div>
                             <div elem="item" mod="block:110">
-                                <input type="submit" elem="submit" class="js-show-bez-btn" mod="mod:type3" value="БЕЗ">
+                                <input type="button" elem="submit" class="js-show-bez-btn-no" mod="mod:type3" value="БЕЗ">
                             </div>
                         </div>
                         <div elem="row-flex">
                             <div elem="item" mod="block:240">
-                                <h3 elem="titleh3" class="show js-show-bez">МОЗГ, <br>КОНТРОЛИРУЮЩИЙ <br>ВАШ МАРКЕТИНГ</h3>
-                                <h3 elem="titleh3" class="gray js-show-bez">НЕТ, ЭТО <br>НЕ ГРЕЦКИЙ ОРЕХ :( <br></h3>
+                                <h3 elem="titleh3" class="show js-show-bez-yes">МОЗГ, <br>КОНТРОЛИРУЮЩИЙ <br>ВАШ МАРКЕТИНГ</h3>
+                                <h3 elem="titleh3" class="gray js-show-bez-no">НЕТ, ЭТО <br>НЕ ГРЕЦКИЙ ОРЕХ :( <br></h3>
                             </div>
                             <div elem="item" mod="block:110">
                                 <img elem="net" src="./images/nenagimat.png" alt="">
@@ -648,42 +760,43 @@
                     </div>
                 </div>
                 <div class="etblock__colum text-center hide-mobile">
-                    <img src="./images/big-mozg.png" elem="mozgi" class="show js-show-bez" alt="">
-                    <img src="./images/mozgi-bez.png" elem="mozgi" class="js-show-bez" alt="">
+                    <img src="./images/big-mozg.png" elem="mozgi" class="show js-show-bez-yes" alt="">
+                    <img src="./images/mozgi-bez.png" elem="mozgi" class="js-show-bez-no" alt="">
                 </div>
             </div>
         </div>
     </div>
 </section>
-<div block="formchose">
+<div block="formchose" id="price">
     <div class="container">
         <div class="row">
             <h2 class="nefackt__title" elem="title2" mod="icon:plan">Не заморачиваем вас сложными формулами<span class="green">все просто: наши расчеты опираются на человеко-час</span><span>(1 час "чистой" работы специалиста)</span></h2>
             <div elem="title">Нужно проверить</div>
+            <form>
             <div block="form" mod="pad:bot">
                 <div elem="row-flex">
                     <div elem="item" mod="check:box">
-                        <input type="checkbox" checked name="" id="cb1"><label for="cb1">CPC</label>
+                        <input type="checkbox" checked name="" id="cb41"><label for="cb41">CPC</label>
                     </div>
                     <div elem="item" mod="check:box">
-                        <input type="checkbox"  name="" id="cb2"><label for="cb2">CPM</label>
+                        <input type="checkbox"  name="" id="cb42"><label for="cb42">CPM</label>
                     </div>
                     <div elem="item" mod="check:box">
-                        <input type="checkbox"  name="" id="cb3"><label for="cb3">CPA</label>
+                        <input type="checkbox"  name="" id="cb43"><label for="cb43">CPA</label>
                     </div>
                     <div elem="item" mod="check:box">
-                        <input type="checkbox"  name="" id="cb4"><label for="cb4">SEO</label>
+                        <input type="checkbox"  name="" id="cb44"><label for="cb44">SEO</label>
                     </div>
                 </div>
                 <div elem="row-flex">
                     <div elem="item" mod="check:box">
-                        <input type="checkbox"  name="" id="cb21"><label for="cb21">SMM</label>
+                        <input type="checkbox"  name="" id="cb421"><label for="cb421">SMM</label>
                     </div>
                     <div elem="item" mod="check:box">
-                        <input type="checkbox"  name="" id="cb31"><label for="cb31">PR</label>
+                        <input type="checkbox"  name="" id="cb431"><label for="c431">PR</label>
                     </div>
                     <div elem="item" mod="check:box">
-                        <input type="checkbox"  name="" id="cb41"><label for="cb41">SERM</label>
+                        <input type="checkbox"  name="" id="cb441"><label for="cb441">SERM</label>
                     </div>
                 </div>
             </div>
@@ -719,17 +832,18 @@
             <div block="form">
                 <div elem="row-flex">
                     <div elem="item">
-                        <input type="text" name="ipn3" elem="text" placeholder="Мой Телефон">
+                        <input type="text" name="ipn3" elem="text" class="phone_mask" placeholder="Мой Телефон">
                     </div>
                     <div elem="item">
                         <input type="submit" elem="submit" value="Точный рассчет">
                     </div>
                 </div>
             </div>
+            </form>
         </div>
     </div>
 </div>
-<section block="faq">
+<section block="faq" id="faq">
     <div class="container">
         <h2 class="nefackt__title" elem="title">F.A.Q.</h2>
         <h3 elem="qa">ЧТО МЫ В ИТОГЕ ПОЛУЧИМ?</h3>
@@ -784,7 +898,7 @@
         </div>
     </div>
 </section>
-<section block="socialbiznes">
+<section block="socialbiznes" id="contact">
     <div class="container">
         <h2 class="nefackt__title" elem="title">Социально ответственный бизнес</h2>
         <div elem="rowf">
