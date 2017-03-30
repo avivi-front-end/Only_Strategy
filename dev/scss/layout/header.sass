@@ -73,6 +73,24 @@
       left: 80px
       width: 80px
       top: 20px
+  &__pdf
+    position: absolute
+    right: 431px
+    top: 62px
+    font-size: 16px
+    letter-spacing: 0.2px
+    color: $colorGreen
+    @media (max-width: 768px)
+      display: none
+    &:after
+      content: ''
+      display: inline-block
+      height: 16px
+      width: 16px
+      background: url(../images/pdf-icon.png) no-repeat
+      position: absolute
+      right: -27px
+      top: 2px
   &__phone
     position: absolute
     right: 58px
