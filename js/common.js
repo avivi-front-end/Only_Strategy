@@ -93,8 +93,9 @@ $(function() {
         $(idShow).fadeIn();
     });
 
-    $('.js_vakans_text').on('change',function(){
+    $('.js_vakans_text').on('change focus',function(){
         var idShow = '#sh6'
+        $('.js_vakans:checked').prop('checked',false);
         $('.undestend__item').fadeOut();
         $(idShow).fadeIn();
     });
