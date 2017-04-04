@@ -55,6 +55,8 @@ html
       background-size: 100% 100%
       left: -79px
       top: -8px
+      @media (max-width: 1025px)
+        display: none
   &__desc
     opacity: 0.5
     padding-bottom: 26px
@@ -96,7 +98,7 @@ html
         display: block
         left: 0px
         right: 0px
-        bottom: -55px
+        bottom: -65px
     @media (max-width: 769px)
       padding-bottom: 0
       margin-bottom: 0
@@ -349,6 +351,8 @@ html
         top: -14px
         background: url(../images/icon_plansh.png) no-repeat
         background-size: 100% 100%
+        @media (max-width: 1025px)
+          display: none
 .question
   padding-top: 91px
   padding-bottom: 80px
@@ -752,12 +756,16 @@ html
         left: -86px
         top: 5px
         @include sprite($megafon)
+        @media (max-width: 1025px)
+          display: none
     &_icon_top
       &:before
         content: ''
         left: -86px
         top: 5px
         @include sprite($icon_top)
+        @media (max-width: 1025px)
+          display: none
 
 .row_agencj
   display: flex
@@ -915,6 +923,8 @@ html
         left: -84px
         top: -6px
         @include sprite($proces)
+        @media (max-width: 1025px)
+          display: none
     &_icon_real
       padding-bottom: 38px
       &:before
@@ -922,6 +932,8 @@ html
         left: -86px
         top: -1px
         @include sprite($real)
+        @media (max-width: 1025px)
+          display: none
     &_icon_missij
       padding-bottom: 38px
       &:before
@@ -929,6 +941,8 @@ html
         left: -95px
         top: -6px
         @include sprite($icon-misij)
+        @media (max-width: 1025px)
+          display: none
       @media (max-width: 769px)
         padding-bottom: 20px
     &_title_padb
@@ -1393,7 +1407,6 @@ html
         @media (max-width: 769px)
           margin-top: 10px
 
-
 .price
   font-family: $ffOpenSansLight
   font-size: 3.286rem
@@ -1410,7 +1423,6 @@ html
       padding-right: 10px
   @media (max-width: 769px)
     font-size: 36px
-
 
 .faq
   padding-top: 86px
