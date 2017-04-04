@@ -85,7 +85,7 @@ $(function() {
         $('.js-show-bez-yes').addClass('show');
     });
 
-    $('.phone_mask').mask("+7 (000) 000-00-00", {placeholder: "мой телефон"});
+    $('.phone_mask').mask("+7 (000) 000-00-00", {placeholder: "Мой телефон"});
 
     $('.js_vakans').on('change',function(){
         var idShow = '#'+$('.js_vakans:checked').val();
