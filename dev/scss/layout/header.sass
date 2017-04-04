@@ -144,10 +144,6 @@
     color: #ffffff
     margin-left: -4px
     margin-bottom: 28px
-    @media (min-width: 1439px)
-      margin-bottom: 178px
-    @media (min-width: 1680px)
-      margin-bottom: 228px
     @media (max-width: 768px)
       font-size: 1.286rem
       padding-top: 135px
@@ -171,6 +167,12 @@
       margin-top: 20px
       @media (max-width: 768px)
         display: none
+  @media (min-width: 1439px)
+    .header__title
+      margin-bottom: 178px
+  @media (min-width: 1680px)
+    .header__title
+      margin-bottom: 228px
   &__noshits
     background: url(../images/no-shits-header.png) no-repeat right center
     min-height: 50px
