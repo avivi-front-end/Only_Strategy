@@ -206,6 +206,9 @@ $(document).on('submit','form', function (event) {
 
 var anchors = (function() {
     $('.js-scroll-anchor').on('click', function(e) {
+        $('.js-show-next').addClass('show');
+        $('.richagblock').addClass('show');
+
         e.preventDefault();
         var changePosition = 0;
         if ($.attr(this, 'href') == '#made-in') {
