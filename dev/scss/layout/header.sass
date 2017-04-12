@@ -26,10 +26,20 @@
       padding: 19px 18px
       cursor: pointer
       border: rgba(#fff, 0.2) solid 2px
+      transition: all 0.2s ease-out 0.1s
       @media (max-width: 768px)
         width: 40px
         height: 40px
         padding: 12px 11px
+      &.black
+        transition: all 0.2s ease-out 0.1s
+        border: rgba(#000, 0.2) solid 2px
+        .header__menu-polos
+          transition: all 0.2s ease-out 0.1s
+          background: #000000
+          &:before, &:after
+            transition: all 0.2s ease-out 0.1s
+            background: #000000
     &-polos
       margin-top: 8px
       margin-bottom: 8px
@@ -37,10 +47,12 @@
       height: 2px
       position: relative
       background: #ffffff
+      transition: all 0.2s ease-out 0.1s
       @media (max-width: 768px)
         margin-top: 5px
         margin-bottom: 5px
       &:before
+        transition: all 0.2s ease-out 0.1s
         content: ''
         height: 2px
         display: block
@@ -53,6 +65,7 @@
         @media (max-width: 768px)
           top: -5px
       &:after
+        transition: all 0.2s ease-out 0.1s
         position: absolute
         left: 0
         bottom: -8px

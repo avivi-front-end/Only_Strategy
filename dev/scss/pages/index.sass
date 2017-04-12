@@ -586,6 +586,23 @@ html
     line-height: 1.500rem
     color: $colorBlack07
     padding-bottom: 16px
+    position: relative
+    &.active
+      color: $colorWhite07
+      .odnako-block__item-name
+        color: #ffffff
+      .odnako-block__number-pic
+        color: #ffffff
+      &:before
+        position: absolute
+        background: #00ae5d
+        left: -20px
+        right: 30px
+        top: -30px
+        bottom: -20px
+        display: block
+        content: ''
+        z-index: -1
     &:nth-child(2n)
       padding-left: 9px
     &-name

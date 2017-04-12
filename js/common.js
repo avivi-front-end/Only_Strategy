@@ -43,15 +43,14 @@ if(ieDetector.ieVersion == 10 || ieDetector.ieVersion == 11) {
 }
 
 var real_slider_option = {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        fade: true,
-        prevArrow: $('.js-slider-real-prev'),
-        nextArrow: $('.js-slider-real-next'),
-        speed: 500
-    };
-
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    fade: true,
+    prevArrow: $('.js-slider-real-prev'),
+    nextArrow: $('.js-slider-real-next'),
+    speed: 500
+};
 
 $(function() {
     // placeholder
@@ -98,6 +97,23 @@ $(function() {
         $('.js_vakans:checked').prop('checked',false);
         $('.undestend__item').fadeOut();
         $(idShow).fadeIn();
+    });
+
+    $('.js_vakans_text').on('change',function(){
+        $('.js_vakans_text-info').text($(this).val());
+    });
+
+    $('.js-change-nda').on('change',function(){
+        var idShow = '#'+$(this).val();
+        if ($(this).prop('checked')) {
+            $(idShow).addClass('active');
+        } else {
+            $(idShow).removeClass('active');
+        }
+    });
+
+    $('.js-change-nda-text').on('change',function(){
+        $('#nda10').addClass('active');
     });
 
     $('form').each(function(){
@@ -201,3 +217,39 @@ var anchors = (function() {
         }, 500);
     });
 })();
+
+$(window).on('scroll', function() {
+    var windowPosition = $(window).scrollTop() + 200;
+
+    if ($(window).scrollTop() > $('.header').offset().top) {
+        $('.js-menu-show').removeClass('black');
+    }
+    if ($(window).scrollTop() > $('.nda').offset().top) {
+        $('.js-menu-show').addClass('black');
+    }
+    if ($(window).scrollTop() > $('.itog-block').offset().top) {
+        $('.js-menu-show').removeClass('black');
+    }
+    if ($(window).scrollTop() > $('.nefackt').offset().top) {
+        $('.js-menu-show').addClass('black');
+    }
+    if ($(window).scrollTop() > $('.undestend').offset().top) {
+        $('.js-menu-show').removeClass('black');
+    }
+    if ($(window).scrollTop() > $('.rasstavim').offset().top) {
+        $('.js-menu-show').addClass('black');
+    }
+    if ($(window).scrollTop() > $('.vam').offset().top) {
+        $('.js-menu-show').removeClass('black');
+    }
+    if ($(window).scrollTop() > $('.processi').offset().top) {
+        $('.js-menu-show').addClass('black');
+    }
+    if ($(window).scrollTop() > $('.last').offset().top) {
+        $('.js-menu-show').removeClass('black');
+    }
+    if ($(window).scrollTop() > $('.socialbiznes').offset().top) {
+        $('.js-menu-show').addClass('black');
+    }
+
+});
