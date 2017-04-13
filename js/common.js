@@ -114,6 +114,7 @@ $(function() {
 
     $('.js-change-nda-text').on('change',function(){
         $('#nda10').addClass('active');
+        $('.js-change-nda-text-div').text($(this).val());
     });
 
     $('form').each(function(){

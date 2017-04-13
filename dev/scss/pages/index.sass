@@ -587,8 +587,14 @@ html
     color: $colorBlack07
     padding-bottom: 16px
     position: relative
+    .hide
+      display: none
     &.active
       color: $colorWhite07
+      .hide
+        display: block
+      .hideactive
+        display: none
       .odnako-block__item-name
         color: #ffffff
       .odnako-block__number-pic
