@@ -22,7 +22,7 @@
   color: rgba(#000, 0.7)
 
 html
-  font: $font-family-base
+  font-family: $font-family-base
   font-style: normal
   font-weight: normal
   font-size: 14px
@@ -34,7 +34,7 @@ html
     padding-top: 25px
     padding-bottom: 0
   &__title
-    font: $ffOpenSansBold
+    font-family: $ffOpenSansBold
     color: #000000
     font-size: 38px
     text-transform: uppercase
@@ -124,7 +124,7 @@ html
         bottom: 0
         right: 0
   &__text
-    font: $font-family-base
+    font-family: $font-family-base
     background: #ffffff
     border: #c4c4c4 solid 1px
     border-radius: 3px
@@ -198,13 +198,13 @@ html
         background-position: 92% center
         background-color: #08c56e
     &_mod_type2
-      font:  $ffOpenSans
+      font-family:  $ffOpenSans
       letter-spacing: 1.5px
       font-size: 1.125rem
       display: block
       width: 100%
-    &_mod_type3
-      font:  $ffOpenSans
+    &_mod_type3, &_mod_type3:hover
+      font-family: $ffOpenSans
       letter-spacing: 1.5px
       font-size: 1.125rem
       background: url(../images/submit-close.png) no-repeat 79% center
@@ -256,7 +256,7 @@ html
       padding-top: 10px
       line-height: 14px
   &__titleh3
-    font: $ffOpenSansSBold
+    font-family: $ffOpenSansSBold
     padding-top: 17px
     font-size: 1.6rem
     color: $colorGreen
@@ -278,7 +278,7 @@ html
     height: auto
     max-width: none
   &__text18
-    font: $ffOpenSansLight
+    font-family: $ffOpenSansLight
     font-size: 1.286rem
     letter-spacing: -0.2px
     @media (max-width: 769px)
@@ -307,7 +307,7 @@ html
     padding-top: 0
     padding-bottom: 0
   &__title
-    font: $ffOpenSansBold
+    font-family: $ffOpenSansBold
     text-indent: -2px
     color: $colorGreen
     font-size: 2.714rem
@@ -320,7 +320,7 @@ html
       font-size: 22px
       padding-bottom: 13px
     span
-      font: $ffOpenSans
+      font-family: $ffOpenSans
       font-size: 1rem
       color: $colorBlack05
     &_icon_plan
@@ -367,7 +367,7 @@ html
   padding-bottom: 80px
   border-bottom: #7c7c7c solid 1px
   &__title
-    font: $ffOpenSansBold
+    font-family: $ffOpenSansBold
     text-indent: -2px
     color: #000
     font-size: 3.286rem
@@ -387,7 +387,7 @@ html
       top: -10px
       background: url(../images/mask-icon.png) no-repeat
   &__desc
-    font: $ffOpenSansLight
+    font-family: $ffOpenSansLight
     font-size: 3.286rem
     line-height: 3.286rem
     color: #000000
@@ -415,13 +415,13 @@ html
       background-color: rgb(255, 255, 255)
       box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15)
     &-name
-      font: $ffOpenSansLight
+      font-family: $ffOpenSansLight
       font-size: 3.571rem
       line-height: 3.571rem
       display: block
       padding-bottom: 9px
     &-red
-      font: $ffOpenSansBold
+      font-family: $ffOpenSansBold
       font-size: 1.286rem
       line-height: 1.586rem
       color: #ea2525
@@ -454,7 +454,7 @@ html
     background-color: rgb(255, 255, 255)
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15)
   &__proc
-    font: $ffOpenSansXBold
+    font-family: $ffOpenSansXBold
     font-size: 6.429rem
     line-height: 6.629rem
     display: block
@@ -468,7 +468,7 @@ html
   padding-top: 67px
   padding-bottom: 55px
   &__title
-    font: $ffOpenSansLight
+    font-family: $ffOpenSansLight
     font-size: 3.286rem
     color: #ffffff
     vertical-align: text-bottom
@@ -533,7 +533,7 @@ html
   padding-bottom: 74px
   background: url("../images/nefackt-bg.png") repeat-x center bottom
   &__title
-    font: $ffOpenSansBold
+    font-family: $ffOpenSansBold
     margin-left: -3px
     font-size: 3.286rem
     line-height: 4rem
@@ -542,7 +542,7 @@ html
     padding-bottom: 30px
     font-weight: normal
     span
-      font: $ffOpenSansLight
+      font-family: $ffOpenSansLight
       display: block
       letter-spacing: -1.2px
       &.green
@@ -560,13 +560,13 @@ html
     &:nth-child(4)
       padding-left: 11px
   &__number
-    font: $ffOpenSansXBold
+    font-family: $ffOpenSansXBold
     font-size: 6.429rem
     line-height: 6.429rem
     color: $colorGreen
     padding-bottom: 20px
   &__text
-    font: $ffOpenSansLight
+    font-family: $ffOpenSansLight
     margin-left: -2px
     font-size: 1.286rem
     line-height: 1.858rem
@@ -621,7 +621,7 @@ html
     &:nth-child(2n)
       padding-left: 9px
     &-name
-      font: $ffOpenSansBold
+      font-family: $ffOpenSansBold
       font-size: 1.286rem
       line-height: 1.857rem
       color: $colorGreen
@@ -681,7 +681,7 @@ html
         left: 15px
         top: -7px
   &__number-pic
-    font: $ffOpenSansLight
+    font-family: $ffOpenSansLight
     font-size: 6.429rem
     line-height: 4rem
     vertical-align: bottom
@@ -702,7 +702,7 @@ html
     &:after
       display: none
   &__title_sec
-    font: $ffOpenSansLight
+    font-family: $ffOpenSansLight
     color: #ffffff
     font-size: 6.429rem
     line-height: 4rem
@@ -714,7 +714,7 @@ html
     color: $colorWhite07
     line-height: 1.514rem
     strong
-      font: $ffOpenSansBold
+      font-family: $ffOpenSansBold
   &__desc-form
     color: $colorWhite03
     font-size: 0.8571rem
@@ -733,7 +733,7 @@ html
     &:nth-child(2n)
       padding-left: 10px
     &-name
-      font: $ffOpenSansSBold
+      font-family: $ffOpenSansSBold
       color: $colorGreen
       font-size: 1.286rem
       padding-bottom: 25px
@@ -810,7 +810,7 @@ html
     &:nth-child(2n)
       padding-left: 10px
     &-name
-      font: $ffOpenSansSBold
+      font-family: $ffOpenSansSBold
       font-size: 1.286rem
       line-height: 1.657rem
       color: $colorGreen
@@ -821,7 +821,7 @@ html
   flex-wrap: wrap
   padding-top: 43px
   &__item
-    font: $ffOpenSans
+    font-family: $ffOpenSans
     width: 25%
     font-size: 1rem
     line-height: 1.371rem
@@ -855,7 +855,7 @@ html
         top: -27px
     span
       &:after, &:before
-        font: $ffOpenSansXBold
+        font-family: $ffOpenSansXBold
         font-size: 1rem
         color: $colorGreen
       &:before
@@ -917,7 +917,7 @@ html
       padding-top: 10px
       padding-bottom: 18px
     li
-      font: $ffOpenSansSBold
+      font-family: $ffOpenSansSBold
       font-size: 1.125rem
       color: #000000
       letter-spacing: 0.4px
@@ -985,7 +985,7 @@ html
     display: none
     @media (max-width: 769px)
       display: block
-      font: $ffOpenSansSBold
+      font-family: $ffOpenSansSBold
       padding-left: 55px
       font-size: 18px
       line-height: 22px
@@ -1008,7 +1008,7 @@ html
         &:nth-child(3)
           padding-right: 0
         &:before
-          font: $ffOpenSansLight
+          font-family: $ffOpenSansLight
           content: counter(point) '.'
           counter-increment: point 1
           color: #000
@@ -1027,7 +1027,7 @@ html
             display: none
 
     &-name
-      font: $ffOpenSansSBold
+      font-family: $ffOpenSansSBold
       color: $colorGreen
       font-size:  1.714rem
       display: inline-block
@@ -1056,13 +1056,14 @@ html
     @media (max-width: 769px)
       padding-top: 23px
     &-name
-      font: $ffOpenSansLight
+      font-family: $ffOpenSansLight
       font-size: 3.286rem
       line-height: 4rem
       text-indent: -5px
       padding-bottom: 26px
       @media (max-width: 769px)
         font-size: 22px
+        text-indent: 0
         line-height: 50px
         padding-top: 3px
         padding-bottom: 0
@@ -1110,7 +1111,7 @@ html
       top: -10px
       right: 0
   &__curent-slider
-    font: $ffOpenSansLight
+    font-family: $ffOpenSansLight
     font-size: 12.79rem
     line-height: 15.214rem
     @media (max-width: 769px)
@@ -1127,7 +1128,7 @@ html
     flex-wrap: wrap
     padding-bottom: 49px
   &__big
-    font: $ffOpenSansBold
+    font-family: $ffOpenSansBold
     width: 50%
     color: $colorGreen
     font-size: 17.14rem
@@ -1170,7 +1171,7 @@ html
           br
             display: none
         &:before
-          font: $ffOpenSansLight
+          font-family: $ffOpenSansLight
           content: counter(point)
           counter-increment: point 1
           font-size: 2.875rem
@@ -1218,7 +1219,7 @@ html
     @media (max-width: 769px)
       width: 100%
   &__title
-    font: $ffOpenSansSBold
+    font-family: $ffOpenSansSBold
     color: $colorGreen
     font-size: 1.125rem
     letter-spacing: 1.2px
@@ -1440,7 +1441,7 @@ html
           margin-top: 10px
 
 .price
-  font: $ffOpenSansLight
+  font-family: $ffOpenSansLight
   font-size: 3.286rem
   letter-spacing: -1px
   vertical-align: text-bottom
@@ -1470,7 +1471,7 @@ html
       padding-bottom: 2px
   &__qa
     color: $colorGreen
-    font: $ffOpenSansSBold
+    font-family: $ffOpenSansSBold
     font-size: 1.286rem
     padding-bottom: 13px
     @media (max-width: 769px)
@@ -1534,7 +1535,7 @@ html
     .green
       color: $colorGreen
     h3
-      font: $ffOpenSansBold
+      font-family: $ffOpenSansBold
       color: $colorGreen
       font-size: 1.286rem
       letter-spacing: -1.2px
@@ -1625,8 +1626,16 @@ html
     @media (max-width: 769px)
       display: block
   &__logo
+    width: 285px
+    padding-right: 125px
+    text-align: center
+    background: url(../images/logo-soc.png) no-repeat
     img
+      vertical-align: middle
       max-width: none
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
   &__url
     padding-top: 6px
     display: block
