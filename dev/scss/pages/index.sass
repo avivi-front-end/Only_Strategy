@@ -170,8 +170,9 @@ html
       margin-bottom: 0
   &__submit
     border-radius: 3px
+    font-family: $font-family-base
     background: url(../images/submit-elips.png) no-repeat 90% center
-    background-color:  $colorGreen
+    background-color: $colorGreen
     border: none
     border-bottom: #469353 solid 3px
     color: #ffffff
@@ -210,6 +211,8 @@ html
       background: url(../images/submit-close.png) no-repeat 79% center
       background-color: #acacac
       border-color: #939393
+    &_mod_type3:hover
+      opacity: 0.8
   &__item_check_box
     position: relative
     flex-wrap: wrap
@@ -267,7 +270,7 @@ html
     display: none
     &.gray
       color: $colorBlack05
-      letter-spacing: 1.1px
+      letter-spacing: 0px
     &.show
       display: block
   &__net
@@ -612,7 +615,7 @@ html
         position: absolute
         background: #00ae5d
         left: -20px
-        right: 30px
+        right: 0px
         top: -30px
         bottom: -20px
         display: block
@@ -621,7 +624,7 @@ html
     &:nth-child(2n)
       padding-left: 9px
     &-name
-      font-family: $ffOpenSansBold
+      font-family: $ffOpenSans
       font-size: 1.286rem
       line-height: 1.857rem
       color: $colorGreen
@@ -630,6 +633,9 @@ html
       margin-bottom: 8px
       img
         vertical-align: middle
+    a.odnako-block__item-name
+      text-decoration: none
+      margin-left: 0
     &_mod_1
       img
         position: relative
@@ -709,6 +715,7 @@ html
     text-indent: -10px
     padding-bottom: 40px
   &__desc
+    font-family: $ffOpenSans
     font-size: 1rem
     text-indent: -2px
     color: $colorWhite07
@@ -917,7 +924,7 @@ html
       padding-top: 10px
       padding-bottom: 18px
     li
-      font-family: $ffOpenSansSBold
+      font-family: $ffOpenSans
       font-size: 1.125rem
       color: #000000
       letter-spacing: 0.4px
@@ -1041,6 +1048,8 @@ html
   padding-bottom: 87px
   @media (max-width: 769px)
     flex-direction: column-reverse
+  .slick-list
+    overflow: visible
   &__left
     width: 50%
     @media (max-width: 769px)
@@ -1070,6 +1079,9 @@ html
     &-list
       color: $colorBlack07
       font-size: 1rem
+      margin-left: -16px
+      @media (max-width: 769px)
+        margin-left: 0
       li
         list-style: none
         position: relative
@@ -1446,6 +1458,7 @@ html
   letter-spacing: -1px
   vertical-align: text-bottom
   &__summa
+    font-family: $ffOpenSansLight
     display: inline-block
     padding-right: 20px
     color: $colorGreen
@@ -1486,8 +1499,11 @@ html
         display: none
 
 .last
-  padding-top: 86px
-  padding-bottom: 102px
+  padding-top: 50px
+  padding-bottom: 50px
+  @media (min-height: 1081px)
+    padding-top: 86px
+    padding-bottom: 102px
   background: url(../images/last-bg.jpg) no-repeat center top
   background-size: 100% auto
   background-color: #000
@@ -1535,7 +1551,7 @@ html
     .green
       color: $colorGreen
     h3
-      font-family: $ffOpenSansBold
+      font-family: $ffOpenSans
       color: $colorGreen
       font-size: 1.286rem
       letter-spacing: -1.2px
@@ -1594,8 +1610,11 @@ html
     padding-bottom: 16px
 
 .socialbiznes
-  padding-top: 88px
-  padding-bottom: 89px
+  padding-top: 50px
+  padding-bottom: 50px
+  @media (min-height: 1081px)
+    padding-top: 88px
+    padding-bottom: 89px
   background: url(../images/nefackt-bg.png) repeat-x center bottom
   @media (max-width: 769px)
     padding-top: 38px
@@ -1627,6 +1646,7 @@ html
       display: block
   &__logo
     width: 285px
+    height: 168px
     padding-right: 125px
     text-align: center
     background: url(../images/logo-soc.png) no-repeat
@@ -1635,7 +1655,12 @@ html
       max-width: none
       position: relative
       top: 50%
-      transform: translateY(-50%)
+      -moz-transform: translate(0, -50%)
+      -ms-transform: translate(0, -50%)
+      -webkit-transform: translate(0, -50%)
+      -o-transform: translate(0, -50%)
+      transform: translate(0, -50%)
+
   &__url
     padding-top: 6px
     display: block
